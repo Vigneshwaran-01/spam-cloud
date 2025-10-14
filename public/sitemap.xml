@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://spamcloud.in/</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/about</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/client</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/blog</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/contact</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/services/incoming-filter</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/services/outgoing-filter</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/blog/the-ultimate-guide-to-spam-filters</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://spamcloud.in/blog/what-is-ssl-and-why-it-important-2</loc>
+  <lastmod>2025-05-05T04:51:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

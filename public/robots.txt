@@ -1,0 +1,10 @@
+
+User-agent: *
+Disallow: /_next/static/
+Disallow: /node_modules/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /_next/static/*/_buildManifest.js
+Disallow: /_next/static/*/_ssgManifest.js
+
+Sitemap: https://spamcloud.in/sitemap.xml
