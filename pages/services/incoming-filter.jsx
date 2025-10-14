@@ -308,32 +308,46 @@ const IncomingFilterNew = () => {
 
 {/* testimonial section starts */}
 
-              <section className="income-testimonial-sec">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-6">
-                      {/* <h3>Host your websites
-                      with zero friction today.</h3> */}
-                      <p>Since using this spam filter, we’ve had zero complaints from our staff about spam. That says a lot.</p>
-                      <div className="testi">
-                      <div className="flex flex-row w-full">
-      <AnimatedTooltip items={people} />
+<section className="modern-testimonial-section">
+  <div className="modern-testimonial-container">
+    <div className="testimonial-content-area">
+      <div className="testimonial-badge">
+        <span className="badge-text">CLIENT TESTIMONIALS</span>
+      </div>
+      <div className="testimonial-text-area">
+        <p className="testimonial-quote">Since using this spam filter, we’ve had zero complaints from our staff about spam. That says a lot.</p>
+        <div className="testimonial-rating">
+          <Image
+            src="https://res.cloudinary.com/daggx9p24/image/upload/v1736167632/star_gmjgly.png"
+            width={120}
+            height={24}
+            className='rating-stars'
+            alt="5 star rating"
+          />
+        </div>
+        <div className="testimonial-avatars">
+          <AnimatedTooltip items={people} />
+        </div>
+      </div>
     </div>
-    <Image
-    src="https://res.cloudinary.com/daggx9p24/image/upload/v1736167632/star_gmjgly.png"
-    width={80}
-    height={50}
-    className='review-img'
-    />
-                      </div>
-                    </div>
-                    <div className="col-md-6 text-center align-content-center">
-                           <button><Link href="/contact">Book a call With our Anti Spam Cloud Experts</Link></button>
-                    </div>
-                  </div>
-                </div>
-
-              </section>
+    
+    <div className="testimonial-cta-area">
+      <div className="cta-card">
+        <h3>Ready to Get Started?</h3>
+        <p>Connect with our email security experts and protect your business today.</p>
+        <Link href="/contact" className="modern-cta-button">
+          <i className="fa-solid fa-calendar-days"></i>
+          Book a call With our experts
+          <i className="fa-solid fa-arrow-right"></i>
+        </Link>
+      </div>
+    </div>
+    
+    <div className="testimonial-bg-elements">
+      <div className="grid-pattern"></div>
+    </div>
+  </div>
+</section>
 
 {/* testimonial section ends  */}
 

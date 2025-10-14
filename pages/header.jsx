@@ -5,6 +5,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isContactClicked, setIsContactClicked] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +21,7 @@ export default function Header() {
   }, []);
 
   // Reusable Tailwind classes following best practices
-  const headerClasses = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+  const headerClasses = `fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ease-in-out overflow-visible ${
     isScrolled 
       ? 'bg-gray-900/95 backdrop-blur-md border-b border-gray-700' 
       : 'bg-black border-b border-gray-800'
@@ -31,7 +32,7 @@ export default function Header() {
   const navLinkClasses = "text-white hover:text-emerald-400 transition-all duration-200 font-medium text-sm lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
   const buttonBaseClasses = "flex items-center gap-2 transition-all duration-200 font-medium text-sm";
   const iconButtonClasses = `${buttonBaseClasses} text-white hover:text-emerald-400 hover:bg-white/10 px-3 py-2 rounded-md`;
-  const dropdownClasses = "absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform translate-y-2 group-hover:translate-y-0 transition-all duration-200";
+  const dropdownClassesBase = "absolute top-full left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-xl border border-gray-700 transition-all duration-200 z-[10000] pointer-events-auto";
   const dropdownLinkClasses = "block px-4 py-3 text-white hover:bg-gray-700 hover:text-emerald-400 transition-colors duration-200 text-sm";
 
   return (
@@ -61,9 +62,24 @@ export default function Header() {
                 About
               </Link>
               
-              <div className="relative group">
-                <span className={navLinkClasses}>Services</span>
-                <div className={dropdownClasses}>
+              <div 
+                className="relative group"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
+                <button 
+                  type="button" 
+                  className={`${navLinkClasses} flex items-center gap-2`}
+                  aria-haspopup="menu" 
+                  aria-expanded={isServicesOpen}
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                >
+                  Services
+                  <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9l6 6 6-6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </button>
+                <div className={`${dropdownClassesBase} ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'} lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0`}>
                   <Link href="/services/incoming-filter" className={dropdownLinkClasses}>
                     Incoming Spam Filter
                   </Link>

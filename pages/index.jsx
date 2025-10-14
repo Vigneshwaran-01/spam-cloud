@@ -87,13 +87,6 @@ export default function New({ homeData, error }) {
 
   useEffect(() => {
     setIsClient(true);
-    
-    // Auto-slide functionality
-    const interval = setInterval(() => {
-      setCurrentSlideIndex(prev => prev === 4 ? 1 : prev + 1);
-    }, 4000);
-
-    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -648,53 +641,7 @@ export default function New({ homeData, error }) {
 
       {/* index why choose ends */}
 
-{/* Modern Testimonial Section */}
-<section className="modern-testimonial-section">
-  <div className="modern-testimonial-container">
-    <div className="testimonial-content-area">
-      <div className="testimonial-badge">
-        <span className="badge-text">CLIENT TESTIMONIALS</span>
-      </div>
-      <div className="testimonial-text-area">
-        <p className="testimonial-quote">{activeTestimonial}</p>
-        <div className="testimonial-rating">
-          <Image
-            src="https://res.cloudinary.com/daggx9p24/image/upload/v1736167632/star_gmjgly.png"
-            width={120}
-            height={24}
-            className='rating-stars'
-            alt="5 star rating"
-          />
-        </div>
-        <div className="testimonial-avatars">
-          <AnimatedTooltip 
-            items={people} 
-            onHover={(id) => {
-              const person = people.find(p => p.id === id);
-              setActiveTestimonial(person?.testimonial || people[0].testimonial);
-            }}
-          />
-        </div>
-      </div>
-    </div>
-    
-    <div className="testimonial-cta-area">
-      <div className="cta-card">
-        <h3>Ready to Get Started?</h3>
-        <p>Connect with our email security experts and protect your business today.</p>
-        <Link href="/contact" className="modern-cta-button">
-          <i className="fa-solid fa-calendar-days"></i>
-          Book a call With our experts
-          <i className="fa-solid fa-arrow-right"></i>
-        </Link>
-      </div>
-    </div>
-    
-    <div className="testimonial-bg-elements">
-      <div className="grid-pattern"></div>
-    </div>
-  </div>
-</section>
+{/* Testimonials removed per request */}
 
 
       {/* Modern Tab Section */}

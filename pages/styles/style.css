@@ -873,6 +873,10 @@ color: white;
     font-family:"Barlow Condensed", sans-serif ;
     text-transform: uppercase;
 }
+.navbar-nav .dropdown:hover > .dropdown-menu,
+.navbar-nav .group:hover > .dropdown-menu {
+  display: block;
+}
 
   .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 20px;
@@ -953,7 +957,7 @@ a.about.nav-link{
 }
 
 .footer-section{
-    background-image: url("https://res.cloudinary.com/daggx9p24/image/upload/v1727078472/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_tfqups.jpg");
+    background-color: #0a1a24; /* theme navy */
     padding: 20px;
     justify-content: center;
 }
@@ -964,9 +968,10 @@ a.about.nav-link{
 .footer-column h3, .footer-image h3 {
     font-size: 25px;
     font-family: "Barlow Condensed", sans-serif;
-    color:white;
+    color:#ffffff;
     text-transform: uppercase;
     padding: 10px 0;
+    letter-spacing: .5px;
 }
 .footer-column ul {
     padding: 0px;
@@ -976,16 +981,20 @@ a.about.nav-link{
     padding: 3px 0;
 }
 .footer-column ul li p {
-    color: white;
+    color: #cbd5e1;
     font-size: 19px;
     font-family: "Barlow Condensed", sans-serif;
     text-align: justify;
 
 }
 .footer-column ul li a {
-    color: white;
+    color: #cbd5e1;
     font-size: 19px;
     font-family: "Barlow Condensed", sans-serif;
+    transition: color .2s ease-in-out;
+}
+.footer-column ul li a:hover {
+    color: #14b8a6;
 }
 
 .index-banner-sec{
