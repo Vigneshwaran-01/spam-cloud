@@ -9,7 +9,7 @@ import tada from 'react-animations/lib/tada';
 import zoomInDown from 'react-animations/lib/zoom-in-down';
 import slideInLeft from 'react-animations/lib/slide-in-left';
 import Image from 'next/image';
-import  CardHoverEffectOutgoing  from "../section/CardHoverEffectOutgoing";
+import  CardHoverEffectOutgoing  from "../section/CardHoverEffectoutgoing";
 import GlobeComponent from '../section/globecomponent';
 import { AnimatedTooltip } from "../../components/ui/animated-tooltip";
 import {people} from '../../lib/data/testi';
