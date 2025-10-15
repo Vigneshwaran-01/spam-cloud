@@ -118,7 +118,7 @@ export default function CardHoverEffectOutgoing() {
             </div>
           </div>
           
-          {features.map((feature, index) => (
+          {/* {features.map((feature, index) => (
             <div 
               key={index}
               className={`cursor-pointer transition-all duration-300 ${
@@ -136,7 +136,7 @@ export default function CardHoverEffectOutgoing() {
                 <span className="text-sm">{feature.shortTitle}</span>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
 

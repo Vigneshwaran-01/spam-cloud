@@ -12,6 +12,7 @@ import Image from 'next/image';
 import { BackgroundBeamsWithCollision } from "../components/ui/background-beams-with-collision";
 import Blogslider from './section/Blogslider';
 import { aboutSchema } from '../lib/data/schema';
+import { Meteors } from '@/components/ui/meteors';
 
 const styles = StyleSheet.create({
     fadeIn: {
@@ -71,11 +72,11 @@ export default function AboutNew() {
         {/* banner section starts */}
 
         <section className="relative min-h-[500px] bg-gradient-to-br from-blue-800 via-blue-600 to-blue-400 flex items-center justify-center overflow-hidden">
-              <BackgroundBeamsWithCollision>
+           
               <h1 className={`text-6xl md:text-7xl font-bold text-white text-center tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
                 About Us
               </h1>
-    </BackgroundBeamsWithCollision>
+      <Meteors number={20} />
         </section>
 
         {/* banner section ends */}

@@ -29,7 +29,7 @@ export default function Header() {
   
   const containerClasses = "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8";
   const flexCenterClasses = "flex items-center justify-between h-16 lg:h-20";
-  const navLinkClasses = "text-white hover:text-emerald-400 transition-all duration-200 font-medium text-sm lg:text-xl cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
+  const navLinkClasses = "text-white hover:text-emerald-400 transition-all duration-200 font-medium text-sm lg:text-md cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
   const buttonBaseClasses = "flex items-center gap-2 transition-all duration-200 font-medium text-sm";
   const iconButtonClasses = `${buttonBaseClasses} text-white hover:text-emerald-400 hover:bg-white/10 px-3 py-2 rounded-md`;
   const dropdownClassesBase = "absolute top-full left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-xl border border-gray-700 transition-all duration-200 z-[10000] pointer-events-auto";
@@ -109,14 +109,14 @@ export default function Header() {
               {/* Contact Us Button - Always visible */}
               <Link 
                 href="/contact" 
-                className="bg-[#46e874] hover:bg-emerald-400 active:bg-emerald-500 text-black px-4 py-3 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 rounded-full font-bold text-xs sm:text-sm lg:text-base transition-all duration-200 hover:shadow-lg hover:shadow-emerald-500/25 hover:-translate-y-0.5 active:scale-95 flex items-center gap-1.5 sm:gap-2"
+                className="bg-[#46e874] hover:bg-emerald-400 active:bg-emerald-500 text-black px-2 py-[5px] sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 rounded-full font-semibold text-xs sm:text-sm lg:text-md transition-all duration-200 hover:shadow-lg hover:shadow-emerald-500/25 hover:-translate-y-0.5 active:scale-95 flex items-center gap-1.5 sm:gap-2"
                 onClick={() => {
                   setIsContactClicked(true);
                   setTimeout(() => setIsContactClicked(false), 300);
                 }}
               >
                 <span className="hidden sm:inline font-bold">Contact Us</span>
-                <span className="sm:hidden font-bold">Contact</span>
+              
                 <svg 
                   className={`w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 transition-all duration-300 ${
                     isContactClicked ? 'translate-x-2 scale-110' : ''
