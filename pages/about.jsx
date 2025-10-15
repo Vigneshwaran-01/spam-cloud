@@ -70,12 +70,10 @@ export default function AboutNew() {
       </Head>
         {/* banner section starts */}
 
-        <section className="about-banner-sec">
-
-
+        <section className="relative min-h-[500px] bg-gradient-to-br from-blue-800 via-blue-600 to-blue-400 flex items-center justify-center overflow-hidden">
               <BackgroundBeamsWithCollision>
-              <h1 className={isClient ? css(styles.slideInUp) : ''}>
-                About US
+              <h1 className={`text-6xl md:text-7xl font-bold text-white text-center tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
+                About Us
               </h1>
     </BackgroundBeamsWithCollision>
         </section>
@@ -83,58 +81,47 @@ export default function AboutNew() {
         {/* banner section ends */}
         {/* welcome section starts */}
 
-        <section className="about-wel-sec">
-        <div className="container">
-          <div className="row about-wel">
-            <div className="col-md-6">
-              <h2>Welcome to Spam Cloud</h2>
-            </div>
-
+        <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 tracking-tight">Welcome to Spam Cloud</h2>
           </div>
 
-          <div className="row about-wel">
-            <div className="col-12 ">
-              <p>Spam filters are utilized to process incoming emails and prevent spam before it reaches the user’s inbox. Its major function is to detect and eliminate the junk emails getting into the user's accounts. To avoid spam emails, our company offered efficient spam filters to manage and provide spam-free inboxes. We offer Incoming and Outgoing spam filters based on your grade of protection.</p>
-              <p>We offer a Cloud-based Spam filter identifies phishing that damages computer, server, or computer network. Once the spam filter is installed, you will get an administration portal where you can manage main features whitelists and blacklists management, subject or content filters, virus identification, email recovery, and quarantine blocking spam.</p>
-            </div>
+          <div className="max-w-4xl mx-auto">
+              <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">Spam filters are utilized to process incoming emails and prevent spam before it reaches the user's inbox. Its major function is to detect and eliminate the junk emails getting into the user's accounts. To avoid spam emails, our company offered efficient spam filters to manage and provide spam-free inboxes. We offer Incoming and Outgoing spam filters based on your grade of protection.</p>
+              <p className="text-lg text-slate-600 leading-relaxed font-medium">We offer a Cloud-based Spam filter identifies phishing that damages computer, server, or computer network. Once the spam filter is installed, you will get an administration portal where you can manage main features whitelists and blacklists management, subject or content filters, virus identification, email recovery, and quarantine blocking spam.</p>
           </div>
         </div>
         </section>
 
         {/* welcome section ends */}
         {/* about us why sec starts */}
-      <section className="about-why-sec">
-      <div className="container">
-    <div className="row about-why">
-            <div className="col-lg-4 col-md-12">
-              <div><i className="fi fi-ts-envelope-download"></i></div>
-              <h4>SMART SPAM FILTERING</h4>
-              <p>We build intelligent, real-time spam filters that adapt to evolving threats. SpamCloud.in ensures your inbox stays clean and secure—without the manual effort.</p>
-              <button>
-              <Link href="#">
+      <section className="py-20 bg-gradient-to-br from-slate-100 to-slate-200">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200">
+              <div className="mb-6"><i className="fi fi-ts-envelope-download text-5xl text-blue-600"></i></div>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Smart Spam Filtering</h4>
+              <p className="text-slate-600 leading-relaxed mb-6">We build intelligent, real-time spam filters that adapt to evolving threats. SpamCloud.in ensures your inbox stays clean and secure—without the manual effort.</p>
+              <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
-              </button>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              <div><i className="fi fi-ts-envelope-dot"></i></div>
-              <h4>99.9% EMAIL DELIVERY ACCURACY</h4>
-              <p>Our filtering engine guarantees reliable and accurate email delivery, ensuring legit emails never get lost. Experience world-class spam protection.</p>
-              <button>
-              <Link href="#">
-                Know More <i className={` fa-solid fa-arrow-right-long`}></i>
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200">
+              <div className="mb-6"><i className="fi fi-ts-envelope-dot text-5xl text-blue-600"></i></div>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">99.9% Email Delivery Accuracy</h4>
+              <p className="text-slate-600 leading-relaxed mb-6">Our filtering engine guarantees reliable and accurate email delivery, ensuring legit emails never get lost. Experience world-class spam protection.</p>
+              <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
+                Know More <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
-              </button>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              <div><i className="fi fi-bs-mailbox-envelope"></i></div>
-              <h4>24/7 SUPPORT & SECURITY</h4>
-              <p>Your security is our priority. Our expert team is available round-the-clock to assist, monitor, and keep your email infrastructure running smoothly.</p>
-              <button>
-              <Link href="#">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200">
+              <div className="mb-6"><i className="fi fi-bs-mailbox-envelope text-5xl text-blue-600"></i></div>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">24/7 Support & Security</h4>
+              <p className="text-slate-600 leading-relaxed mb-6">Your security is our priority. Our expert team is available round-the-clock to assist, monitor, and keep your email infrastructure running smoothly.</p>
+              <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
-              </button>
             </div>
           </div>
 </div>
@@ -143,52 +130,37 @@ export default function AboutNew() {
       {/* about us why sec ends */}
 
       {/* about us service sec starts */}
-      <section className="about-services-sec">
-      <div className="container">
-  <div className="row ">
-
-    <div className="col-12">
-    <h2 className={isClient ? css(styles.slideInUp) : ''}>
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+  <div className="text-center mb-16">
+    <h2 className={`text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
     Our Services</h2>
-    </div>
-
   </div>
-  <div className="row about-services">
-            <div className="col-lg-4 col-md-12">
-              <div className='con'>
-                <i className="fi fi-ts-envelope-download"></i>
-              <h4>Incoming Email Filtering</h4>
-              <p>Email continuity & protection from spam, virus, ransomware, phishing, malware.</p>
-              <button>
-              <Link href="#">
+
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 group">
+                <i className="fi fi-ts-envelope-download text-5xl text-blue-600 mb-6 block group-hover:text-blue-700 transition-colors duration-300"></i>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Incoming Email Filtering</h4>
+              <p className="text-slate-600 leading-relaxed mb-6">Email continuity & protection from spam, virus, ransomware, phishing, malware.</p>
+              <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
-              </button>
-              </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              <div className='con'>
-                <i className="fi fi-ts-envelope-dot"></i>
-              <h4>Outgoing Email Filtering</h4>
-              <p>Abuse management to help avoid IP blacklisting and improve email delivery and continuity.</p>
-              <button>
-              <Link href="#">
-                Know More <i className={` fa-solid fa-arrow-right-long`}></i>
+            <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 group">
+                <i className="fi fi-ts-envelope-dot text-5xl text-blue-600 mb-6 block group-hover:text-blue-700 transition-colors duration-300"></i>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Outgoing Email Filtering</h4>
+              <p className="text-slate-600 leading-relaxed mb-6">Abuse management to help avoid IP blacklisting and improve email delivery and continuity.</p>
+              <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
+                Know More <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
-              </button>
-              </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
-              <div className='con'>
-                <i className="fi fi-bs-mailbox-envelope"></i>
-              <h4>Email Archiving</h4>
-              <p>Robust encrypted email archiving to help prevent data loss and improve legal compliance.</p>
-              <button>
-              <Link href="#">
+            <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 group">
+                <i className="fi fi-bs-mailbox-envelope text-5xl text-blue-600 mb-6 block group-hover:text-blue-700 transition-colors duration-300"></i>
+              <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Email Archiving</h4>
+              <p className="text-slate-600 leading-relaxed mb-6">Robust encrypted email archiving to help prevent data loss and improve legal compliance.</p>
+              <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
-              </button>
-            </div>
             </div>
           </div>
 
@@ -196,13 +168,13 @@ export default function AboutNew() {
       </section>
 
             {/* index blog sec starts */}
-            <section className="index-blog-sec">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h2 className='text-center '>Our Blog</h2>
-            <Blogslider />
-          </div>
+            <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">Our Blog</h2>
+        </div>
+        <div className="w-full">
+          <Blogslider />
         </div>
       </div>
       </section>

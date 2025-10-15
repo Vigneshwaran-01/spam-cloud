@@ -335,12 +335,12 @@ export default function New({ homeData, error }) {
               </div>
 
               {/* Floating Action Indicators */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-emerald-500/20 rounded-full flex items-center justify-center animate-ping">
+              {/* <div className="absolute -top-4 -right-4 w-8 h-8 bg-emerald-500/20 rounded-full flex items-center justify-center animate-ping">
                 <div className="w-4 h-4 bg-emerald-400 rounded-full"></div>
               </div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-cyan-500/20 rounded-full flex items-center justify-center animate-pulse" style={{animationDelay: '1s'}}>
                 <div className="w-3 h-3 bg-cyan-400 rounded-full"></div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -544,15 +544,15 @@ export default function New({ homeData, error }) {
               alt="Email Security Statistics Dashboard" 
               className="stats-dashboard-image"
             />
-            <div className="image-glow-effect"></div>
+            {/* <div className="image-glow-effect"></div> */}
           </div>
         </div>
 
         {/* Background Elements */}
-        <div className="stats-bg-elements">
+        {/* <div className="stats-bg-elements">
           
           <div className="grid-pattern"></div>
-        </div>
+        </div> */}
       </div>
     </section>
       {/* Modern Stats Section ends */}
@@ -562,20 +562,8 @@ export default function New({ homeData, error }) {
       <section className="modern-features-section">
         <div className="modern-features-container">
           {/* Left Content Area */}
-          <div className="features-content-area">
-            <div className="features-badge">
-              <span className="badge-text">ANTI SPAM CLOUD FILTER</span>
-            </div>
-            <h2 className="features-main-title">
-              Essential Features of Email Filtering Services
-            </h2>
-            <p className="features-description">
-              We substantially illustrate the immense verifiable levels of spam and virus detection service for your business.
-            </p>
-          </div>
 
-          {/* Right Features List Area */}
-          <div className="features-list-area">
+<div className="features-list-area">
             <div className="features-grid">
               
               <div className="feature-item" data-feature="quarantine">
@@ -630,6 +618,22 @@ export default function New({ homeData, error }) {
 
             </div>
           </div>
+  {/* Right Features List Area */}
+
+          <div className="features-content-area">
+            <div className="features-badge">
+              <span className="badge-text">ANTI SPAM CLOUD FILTER</span>
+            </div>
+            <h2 className="features-main-title">
+              Essential Features of Email Filtering Services
+            </h2>
+            <p className="features-description">
+              We substantially illustrate the immense verifiable levels of spam and virus detection service for your business.
+            </p>
+          </div>
+
+        
+          
 
           {/* Background Elements */}
           <div className="features-bg-elements">

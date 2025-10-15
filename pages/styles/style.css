@@ -957,7 +957,7 @@ a.about.nav-link{
 }
 
 .footer-section{
-    background-color: #0a1a24; /* theme navy */
+    background-color: #011333; /* theme navy */
     padding: 20px;
     justify-content: center;
 }
@@ -1649,14 +1649,10 @@ padding-bottom:20px ;
     border-radius: 8px;
     transition: 300ms ease-in-out;
 }
-.income-dashboard-sec{
-    background-color: #111827;
-    padding: 40px 30px;
-    text-align: center;
-}
+
 
 .income-deploy-sec {
-    background-color: #111827;
+    background-color: #011333;
     padding: 40px 30px;
     text-align: center;
     height: auto;
@@ -2590,7 +2586,7 @@ padding: 5px;
 
 .stats-dashboard-image:hover {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-  border-color: rgba(16, 185, 129, 0.5);
+  
 }
 
 .image-glow-effect {

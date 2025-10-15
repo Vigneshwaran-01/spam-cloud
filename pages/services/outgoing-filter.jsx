@@ -8,15 +8,87 @@ import slideInDown from 'react-animations/lib/slide-in-down';
 import tada from 'react-animations/lib/tada';
 import zoomInDown from 'react-animations/lib/zoom-in-down';
 import slideInLeft from 'react-animations/lib/slide-in-left';
-import { ContainerScroll } from "../../components/ui/container-scroll-animation";
-import { Meteors } from "../../components/ui/meteors-right";
 import Image from 'next/image';
-import  CardHoverEffectoutgoing  from "../section/CardHoverEffectoutgoing";
-import { AnimatedTooltip } from "../../components/ui/animated-tooltip";
+import  CardHoverEffectOutgoing  from "../section/CardHoverEffectOutgoing";
 import GlobeComponent from '../section/globecomponent';
-import  TimeLineOutgoing from '../section/TimeLineOutgoing';
+import { AnimatedTooltip } from "../../components/ui/animated-tooltip";
 import {people} from '../../lib/data/testi';
 import Blogslider from '../section/Blogslider';
+import { Meteors } from '@/components/ui/meteors';
+
+// Icon components for Why Choose section
+const ShieldIcon = ({ className }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+  </svg>
+);
+
+const SendIcon = ({ className }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+  </svg>
+);
+
+const EyeIcon = ({ className }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+  </svg>
+);
+
+const ServerIcon = ({ className }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+  </svg>
+);
+
+// Why Choose features data
+const whyChooseFeatures = [
+  {
+    title: "Advanced Outbound Email Protection",
+    description: "Protect your domain reputation with comprehensive outbound email filtering that prevents spam, malware, and malicious content from leaving your network, ensuring your IP addresses remain trusted.",
+    icon: ShieldIcon,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
+    learnMore: {
+      text: "Learn more about outbound protection",
+      link: "#"
+    }
+  },
+  {
+    title: "Real-Time Delivery Monitoring",
+    description: "Monitor outbound email delivery in real-time with comprehensive tracking and analytics. Get instant notifications about delivery issues, bounce rates, and reputation threats to maintain optimal email performance.",
+    icon: EyeIcon,
+    iconBg: "bg-green-100",
+    iconColor: "text-green-600",
+    learnMore: {
+      text: "Explore monitoring features",
+      link: "#"
+    }
+  },
+  {
+    title: "Domain Reputation Management",
+    description: "Maintain and protect your domain's sending reputation with advanced reputation monitoring, blacklist checking, and proactive threat detection that keeps your emails reaching their intended recipients.",
+    icon: SendIcon,
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
+    learnMore: {
+      text: "See reputation management tools",
+      link: "#"
+    }
+  },
+  {
+    title: "Enterprise-Grade Infrastructure",
+    description: "Built on robust, scalable infrastructure that handles high-volume email traffic with guaranteed uptime and performance. Seamlessly integrates with existing email systems without disrupting your workflow.",
+    icon: ServerIcon,
+    iconBg: "bg-orange-100",
+    iconColor: "text-orange-600",
+    learnMore: {
+      text: "View infrastructure details",
+      link: "#"
+    }
+  }
+];
 
 const styles = StyleSheet.create({
   fadeIn: {
@@ -56,252 +128,172 @@ const outgoingFilterNew = () => {
   return (
     <div>
       <Head>
-      <title>outgoing spam filter service in chennai - spam cloud</title>
+        <title>outgoing spam filter service in chennai - spam cloud</title>
         <meta name="description" content="Spam Cloud offers efficient outgoing spam filter services in Chennai to safeguard your emails and enhance security from external threads and fishing attacks." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://spamcloud.in/services/outgoing-filter" />
         <meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content='outgoing spam filter service in chennai - spam cloud' />
-	<meta property="og:description" content="Spam Cloud offers efficient outgoing spam filter services in Chennai to safeguard your emails and enhance security from external threads and fishing attacks." />
-	<meta property="og:url" content="https://spamcloud.in/services/outgoing-filter" />
-	<meta property="og:site_name" content="Sixth Star Technologies" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content='outgoing spam filter service in chennai - spam cloud' />
+        <meta property="og:description" content="Spam Cloud offers efficient outgoing spam filter services in Chennai to safeguard your emails and enhance security from external threads and fishing attacks." />
+        <meta property="og:url" content="https://spamcloud.in/services/outgoing-filter" />
+        <meta property="og:site_name" content="Sixth Star Technologies" />
       </Head>
-      {/* Banner section starts */}
-      <div className=" w-full relative income-banner-sec">
-              <div
-                className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl container" />
-              <div
-                className="relative shadow-xl bg-gray-900  px-4 py-8 h-full overflow-hidden flex flex-col justify-center ">
-                <div
-                  className="h-5  flex items-center justify-center mb-4">
-                </div>
-      
-                <div className="row">
-            <div className="col-md-12">
-              <h1 className={isClient ? css(styles.slideInUp) : ''}>
-              OUTGOING SPAM FILTER
-              </h1>
-              <p>
-              Ensure secure email delivery with enterprise-grade protection against spam.
-              </p>
 
-              <div className="cta">
-                <button>
-                  <Link href="/contact">Contact Us</Link>
-                </button>
-                
-              </div>
-              
-            </div>
-          </div>
-      
-                {/* Meaty part - Meteor effect */}
-                <Meteors number={20} />
-              </div>
-           
-            </div>
-
-     
-      {/* Banner section ends */}
-
-      {/* dashboard section starts */}
-        <section className="income-dashboard-sec">
-        <div className="income-dashboard">
-                   <div className="flex flex-col overflow-hidden">
-                         <ContainerScroll
-                           titleComponent={
-                             <>
-                             </>
-                           }>
-                           <Image
-                             src={`https://res.cloudinary.com/daggx9p24/image/upload/v1740212849/outgoing_spam-filter_spamzc.png`}
-                             alt="hero"
-                             height={900}
-                             width={1500}
-                             className="mx-auto rounded-2xl object-cover h-full object-left-top"
-                             draggable={false} />
-                         </ContainerScroll>
-                       </div>
-                  </div>
-        </section>
-
-      {/* dashboard section ends */}
+      {/* Hero Section */}
+      <section className="relative min-h-[600px] bg-gradient-to-br from-blue-800 via-blue-600 to-blue-400 flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <h1 className={`text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
+            Outgoing Spam Filter
+          </h1>
+          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Protect your domain reputation with enterprise-grade outbound email filtering that ensures secure delivery and maintains sender credibility.
+          </p>
+        </div>
+        <Meteors number={20} />
+      </section>
 
       {/* deployment section starts */}
-          <section className="income-deploy-sec">
-            <div className="row">
-              <div className="col-md-12">
-                <h2 className={isClient ? css(styles.slideInUp) : ''}>
-                One-Click Deployment
-                </h2>
-                <p className='pb-4'>
-                Deploy our outgoing spam filter with just one click—no downtime, no complicated setup. Start protecting your domain reputation instantly.
-                </p>
-              </div>
-            </div>
-              <div className="container">
-              <div className="row income-deploy-con">
-                <div className="col-lg-7 col-md-6">
-                  <div className="con">
-                           <CardHoverEffectoutgoing />
-                           <h4>Instant Outbound Email Protection</h4>
-                           <p>Effortlessly integrate with your existing email system for instant protection.
-                           </p>
-                  </div>
-              
-              </div>
-              <div className="col-lg-5 col-md-6">
-                <div className="con">
-                <h4>Block Outbound Spam Worldwide</h4>
-                <Image 
-                   src={`https://res.cloudinary.com/daggx9p24/image/upload/v1745498593/email-concept-with-world-envelope_869423-2166_qpm4tm.jpg`}
-                   alt="hero"
-                   height={300}
-                   width={500}
-                   className="mx-auto rounded-2xl object-cover h-full object-left-top"
-                   draggable={false}
-                   style={{paddingLeft: '20px', paddingTop: '20px'}}
-                    />
-                
-                </div>
-                </div>
-              </div>
+      <section id="deployment-section" className="py-10 bg-gradient-to-b from-slate-50 to-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className={`text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
+              Seamless Integration & Deployment
+            </h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Deploy enterprise-grade outgoing spam filters in minutes with our seamless, one-click setup. Protect your domain reputation instantly.
+            </p>
+          </div>
 
-              <div className="row income-deploy-con">
-                
-              <div className="col-lg-5 col-md-6">
-                <div className="con">
-                <h4>Protect Your Domain Across the Globe</h4>
-               <GlobeComponent />
-                </div>
-              </div>
-
-              <div className="col-lg-7 col-md-6">
-                  <div className="con">
-                    
-                  <h4>One-Click Report Generation</h4>
-                <p>Access detailed insights and analytics with a single click for complete email monitoring.
-                </p>
-                <Image 
-                   src={`https://res.cloudinary.com/daggx9p24/image/upload/v1745556920/report-generation_ba8eas.png`}
-                   alt="hero"
-                   height={300}
-                   width={600}
-                   className="mx-auto rounded-2xl object-cover h-full object-left-top"
-                   draggable={false}
-                   style={{paddingTop: '20px'}}
-                    />
-                  </div>
-              
-              </div>
-              </div>
-              </div>
-
-            </section>                  
-        
+          {/* Scroll-based layout starts here */}
+          <CardHoverEffectOutgoing />
+        </div>
+      </section>
 
       {/* deployment section ends */}
 
       {/* why choose section starts */}
-
-      <section className="why-choose-sec">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h2 className={isClient ? css(styles.slideInUp) : '' }>
+      <section id="why-choose-section" className="py-20 bg-[#011333]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className={`text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
               Why Choose Spam Cloud Outgoing Filter?
-              </h2>
+            </h2>
+          </div>
+
+          {/* Proofpoint-style linear layout with timeline */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              {/* Vertical timeline line */}
+              <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-gradient-to-b from-blue-200 via-green-200 via-purple-200 to-orange-200"></div>
+              
+              <div className="space-y-12">
+                {whyChooseFeatures.map((feature, index) => (
+                  <div key={index} className="relative border-b border-gray-600 pb-8 last:border-b-0">
+                    <div className="flex items-start gap-6">
+                      <div className={`relative z-10 w-12 h-12 ${feature.iconBg} rounded-lg flex items-center justify-center flex-shrink-0 border-2 border-gray-700 shadow-sm`}>
+                        <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-4">
+                          {feature.title}
+                        </h3>
+                        <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                          {feature.description}
+                        </p>
+                        {feature.learnMore && (
+                          <a 
+                            href={feature.learnMore.link} 
+                            className="text-blue-400 hover:text-blue-300 font-medium underline transition-colors duration-200"
+                          >
+                            {feature.learnMore.text}
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-  <TimeLineOutgoing />
           </div>
-          </div>
-          </section>
+        </div>
+      </section>
 
       {/* why choose section ends  */}
 
-            {/* index blog sec starts */}
-            <section className="index-blog-sec">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h2 className='text-center '>Our Blog</h2>
-            <Blogslider />
+      {/* index blog sec starts */}
+      <section className="py-20 bg-gradient-to-b from-white to-slate-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight">Our Blog</h2>
           </div>
+          <Blogslider />
         </div>
-      </div>
       </section>
 
       {/* index blog sec ends */}
 
       {/* pricing section starts */}
-                
-          <section className="income-price-sec">
-          <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h2 className={isClient ? css(styles.slideInUp) : '' }>
-              Pricing For Incomimg Spam Filter
-              </h2>
-            </div>
-            </div>
-            <div className="row income-price-con">
-
-    <div className="col-lg-4 col-md-12">
-          <div className="pricecard bg-gray-50">
-            <div className="block">
-              <h4 className='text-center'>50,000 Messages</h4>
-              {/* <p>$ <span className="price">99 </span>/month</p> */}
-              <button><Link href="../contact">Get a quote</Link></button>
-            </div>
-            <ul>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Protect your server's IP reputation</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Domain Name is protected</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Notification in case of abuse</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Easily detect abusers</p></li>
-
-            </ul>
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className={`text-4xl md:text-4xl font-bold text-white mb-4 tracking-tight ${isClient ? css(styles.slideInUp) : ''}`}>
+              Pricing For Outgoing Spam Filter
+            </h2>
           </div>
-    </div>
-
-    <div className="col-lg-4 col-md-6 ">
-    <div className="pricecard bg-gray-50">
-            <div className="block">
-              <h4 className='text-center'>300,000 Messages</h4>
-              {/* <p>$ <span className="price">500</span> /month</p> */}
-              <button><Link href="#">Get a quote</Link></button>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-center mb-8">
+                <h4 className="text-2xl font-bold text-slate-900 mb-4">50,000 Messages</h4>
+                <Link href="../contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+                  Get a Quote
+                </Link>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Protect your server's IP reputation</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Domain Name is protected</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Notification in case of abuse</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Easily detect abusers</span></li>
+              </ul>
             </div>
-            <ul>
-            <li><i className="fa-solid fa-circle-check"></i> <p>Protect your server's IP reputation</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Unlimited amount of servers</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Notification in case of abuse</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p> Easily detect abusers</p></li>
 
-            </ul>
+            <div className="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-blue-500 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">Most Popular</span>
+              </div>
+              <div className="text-center mb-8">
+                <h4 className="text-2xl font-bold text-slate-900 mb-4">300,000 Messages</h4>
+                <Link href="../contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+                  Get a Quote
+                </Link>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Protect your server's IP reputation</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Unlimited amount of servers</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Notification in case of abuse</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Easily detect abusers</span></li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="text-center mb-8">
+                <h4 className="text-2xl font-bold text-slate-900 mb-4">1,000,000 Messages</h4>
+                <Link href="../contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+                  Get a Quote
+                </Link>
+              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Protect your server's IP reputation</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Unlimited amount of servers</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Notification in case of abuse</span></li>
+                <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-green-500 mt-1"></i> <span className="text-slate-600">Easily detect abusers</span></li>
+              </ul>
+            </div>
           </div>
-    </div>
-
-    <div className="col-lg-4 col-md-6">
-    <div className="pricecard bg-gray-50">
-            <div className="block">
-              <h4 className='text-center'>1,000,000 Messages</h4>
-              {/* <p>$ <span className="price"> 1500</span>/month</p> */}
-              <button><Link href="../contact">Get a Quote</Link></button>
-            </div>
-            <ul>
-            <li><i className="fa-solid fa-circle-check"></i> <p>Protect your server's IP reputation</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Unlimited amount of servers</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p>Notification in case of abuse</p></li>
-              <li><i className="fa-solid fa-circle-check"></i> <p> Easily detect abusers</p></li>
-
-            </ul>
-          </div>
-    </div>
-
-  </div>
-            </div>
-
-          </section>
+        </div>
+      </section>
 
       {/* pricing section ends */}
 

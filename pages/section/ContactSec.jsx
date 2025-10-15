@@ -40,7 +40,7 @@ export default function ContactSec() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#281b69] to-[#072463] text-white py-16 " id='contactForm'>
+    <div className="bg-gradient-to-r from-[#011333] to-[#011333] text-white py-16 " id='contactForm'>
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-6">Get In Touch With our Anti Spam Experts</h2>
 
