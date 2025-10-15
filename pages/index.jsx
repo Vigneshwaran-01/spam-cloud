@@ -273,7 +273,6 @@ export default function New({ homeData, error }) {
                     { type: 'phishing', subject: 'Urgent: Verify Account', sender: 'security@fake-bank.net', status: 'blocked', delay: '1s' },
                     { type: 'legitimate', subject: 'Meeting Reminder', sender: 'team@company.com', status: 'delivered', delay: '2s' },
                     { type: 'spam', subject: 'Free Pills Online', sender: 'offers@spam-pharmacy.biz', status: 'blocked', delay: '3s' },
-                    { type: 'legitimate', subject: 'Project Update', sender: 'manager@company.com', status: 'delivered', delay: '4s' }
                   ].map((email, index) => (
                     <div 
                       key={index}
