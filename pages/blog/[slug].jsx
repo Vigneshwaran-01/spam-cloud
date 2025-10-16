@@ -127,27 +127,27 @@ function BlogPost({ post, relatedPosts }) {
       <div className="max-w-8xl  grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 px-4 py-12">
         
         {/* Table of Contents (Left) */}
-        <aside className="md:col-span-3 hidden md:block p-5 bg-white border border-slate-200 rounded-xl sticky top-24 h-max shadow-sm">
-          <div className='post-toc-con'>
-            <h3 className="font-semibold text-slate-900 mb-4">Table of Contents</h3>
-            <ul className="space-y-2 text-sm">
+        <aside className="md:col-span-3 hidden md:block p-6 bg-gradient-to-br from-blue-800 via-blue-600 to-blue-400 border border-blue-300 rounded-xl sticky top-24 h-max shadow-xl">
+          <div className=''>
+            <h3 className="font-bold text-white mb-6 text-lg tracking-tight">Table of Contents</h3>
+            <ul className="space-y-3 text-sm">
               {headings.length > 0 ? (
                 headings.map((heading, index) => (
                   <li key={index}>
-                    <a href={`#heading-${index}`} className="text-slate-700 hover:text-emerald-600">{heading}</a>
+                    <a href={`#heading-${index}`} className="text-blue-100 hover:text-white transition-colors duration-200 block py-1 px-2 rounded hover:bg-white/10">{heading}</a>
                   </li>
                 ))
               ) : (
-                <li>No headings available</li>
+                <li className="text-blue-100">No headings available</li>
               )}
             </ul>
-            <div className="mt-5 p-4 bg-slate-50 border border-slate-200 rounded-lg post-share">
-              <h4 className="font-semibold text-slate-900 mb-2">Share this post</h4>
-              <div className="flex space-x-4 icon text-slate-600">
-                <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline"><i className="fa-brands fa-facebook"></i></a>
-                <a href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${post.title}`} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline"><i className="fa-brands fa-x-twitter"></i></a>
-                <a href={`https://www.linkedin.com/shareArticle?url=${shareUrl}`} target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:underline"><i className="fa-brands fa-linkedin"></i></a>
-                <a href={`https://api.whatsapp.com/send?text=${post.title} - ${shareUrl}`} target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline"><i className="fa-brands fa-whatsapp"></i></a>
+            <div className="mt-6 p-4 bg-white/10 border border-white/20 rounded-lg post-share backdrop-blur-sm">
+              <h4 className="font-semibold text-white mb-3">Share this post</h4>
+              <div className="flex space-x-4 icon">
+                <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 transition-colors duration-200"><i className="fa-brands fa-facebook text-lg"></i></a>
+                <a href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${post.title}`} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 transition-colors duration-200"><i className="fa-brands fa-x-twitter text-lg"></i></a>
+                <a href={`https://www.linkedin.com/shareArticle?url=${shareUrl}`} target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 transition-colors duration-200"><i className="fa-brands fa-linkedin text-lg"></i></a>
+                <a href={`https://api.whatsapp.com/send?text=${post.title} - ${shareUrl}`} target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-300 transition-colors duration-200"><i className="fa-brands fa-whatsapp text-lg"></i></a>
               </div>
             </div>
           </div>

@@ -57,9 +57,7 @@ li {
 a{
     text-decoration: none !important;
 }
-ul {
-    padding: 2px;
-}
+
 .banner-column{
     height: 350px;
     background-color: rgba(0, 19, 104, 0.918);
@@ -977,9 +975,9 @@ a.about.nav-link{
     padding: 0px;
 }
 
-.footer-column ul li {
+/* .footer-column ul li {
     padding: 3px 0;
-}
+} */
 .footer-column ul li p {
     color: #cbd5e1;
     font-size: 19px;

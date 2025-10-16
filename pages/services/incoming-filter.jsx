@@ -264,10 +264,10 @@ const IncomingFilterNew = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <div className="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="bg-white rounded-xl p-[0.5rem] shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="text-center mb-8">
-              <h4 className="text-2xl font-bold text-slate-900 mb-4">1 Domain</h4>
-              <Link href="../contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+              <h4 className="text-2xl font-bold text-slate-900 mt-2 mb-2">1 Domain</h4>
+              <Link href="../contact" className="inline-flex items-center gap-2 px-3 py-3 text-sm bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
                 Get a Quote
               </Link>
             </div>
@@ -280,13 +280,13 @@ const IncomingFilterNew = () => {
             </ul>
     </div>
 
-    <div className="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-blue-500 relative">
+    <div className="bg-white rounded-xl p-[0.5rem] shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-blue-500 relative">
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
               <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">Most Popular</span>
             </div>
             <div className="text-center mb-8">
-              <h4 className="text-2xl font-bold text-slate-900 mb-4">50 Domains</h4>
-              <Link href="../contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+              <h4 className="text-2xl font-bold text-slate-900 mt-2 mb-2">50 Domains</h4>
+              <Link href="../contact" className="inline-flex items-center gap-2 px-3 py-3 text-sm bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
                 Get a Quote
               </Link>
             </div>
@@ -299,10 +299,10 @@ const IncomingFilterNew = () => {
             </ul>
     </div>
 
-    <div className="bg-white rounded-xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <div className="bg-white rounded-xl p-[0.5rem] shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
             <div className="text-center mb-8">
-              <h4 className="text-2xl font-bold text-slate-900 mb-4">250 Domains</h4>
-              <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+              <h4 className="text-2xl font-bold text-slate-900 mb-2 mt-2">250 Domains</h4>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-3 py-3 text-sm bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
                 Get a Quote
               </Link>
             </div>

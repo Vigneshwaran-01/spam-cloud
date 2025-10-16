@@ -903,8 +903,8 @@ export default function New({ homeData, error }) {
           />
           
           {/* Floating Elements */}
-          <div className="absolute -top-4 -right-4 w-20 h-20 bg-green-400 rounded-full opacity-20 animate-pulse"></div>
-          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-300 rounded-full opacity-10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          {/* <div className="absolute -top-4 -right-4 w-20 h-20 bg-green-400 rounded-full opacity-20 animate-pulse"></div>
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-300 rounded-full opacity-10 animate-pulse" style={{animationDelay: '1s'}}></div> */}
         </div>
       </div>
 
