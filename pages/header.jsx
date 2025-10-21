@@ -80,10 +80,10 @@ export default function Header() {
                   </svg>
                 </button>
                 <div className={`${dropdownClassesBase} ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'} lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:translate-y-0`}>
-                  <Link href="/services/incoming-filter" className={dropdownLinkClasses}>
+                  <Link href="/services/incoming-spam-filter-service-provider-chennai" className={dropdownLinkClasses}>
                     Incoming Spam Filter
                   </Link>
-                  <Link href="/services/outgoing-filter" className={dropdownLinkClasses}>
+                  <Link href="/services/outgoing-spam-filter-service-provider-chennai" className={dropdownLinkClasses}>
                     Outgoing Spam Filter
                   </Link>
                   <Link href="https://sixthstartech.com/mail-services/carbonio-mail" className={dropdownLinkClasses}>
@@ -177,14 +177,14 @@ export default function Header() {
                 <span className="block text-white py-2 font-medium">Services</span>
                 <div className="ml-4 space-y-2">
                   <Link 
-                    href="/services/incoming-filter" 
+                    href="/services/incoming-spam-filter-service-provider-chennai" 
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block text-gray-300 hover:text-emerald-400 py-1 text-sm transition-colors duration-200"
                   >
                     Incoming Spam Filter
                   </Link>
                   <Link 
-                    href="/services/outgoing-filter" 
+                    href="/services/outgoing-spam-filter-service-provider-chennai" 
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block text-gray-300 hover:text-emerald-400 py-1 text-sm transition-colors duration-200"
                   >

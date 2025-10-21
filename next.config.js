@@ -51,8 +51,8 @@ const nextConfig = {
       },
       // Other specific redirects
       { source: "/about.php", destination: "/about", permanent: true },
-      { source: "/incoming-filter.php", destination: "/incoming-filter", permanent: true },
-      { source: "/outgoing-filter.php", destination: "/outgoing-filter", permanent: true },
+      { source: "/incoming-filter.php", destination: "/incoming-spam-filter-service-provider-chennai", permanent: true },
+      { source: "/outgoing-filter.php", destination: "/outgoing-spam-filter-service-provider-chennai", permanent: true },
       { source: "/client.php", destination: "/client", permanent: true },
       { source: "/contact.php", destination: "/contact", permanent: true },
     ];

@@ -1,168 +1,195 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import { Mail, Phone, MapPin, Globe, Twitter, Linkedin, Facebook } from 'lucide-react'; // Using lucide-react for icons
 
-export default function FOOTER() {
+// Component for the social media icons
+const SocialIcon = ({ Icon, href }) => (
+  <a 
+    href={href} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-700 hover:bg-blue-600 text-slate-400 hover:text-white transition-colors duration-300 transform hover:scale-110"
+    aria-label={Icon.displayName || 'Social Link'}
+  >
+    <Icon className="w-4 h-4" />
+  </a>
+);
+
+// The main Footer component
+const Footer = () => {
+  // Utility component to replace Next.js Link for standalone compatibility
+  const AnchorLink = ({ href, children, className }) => (
+    <a href={href} className={className} onClick={(e) => e.preventDefault()} role="link">
+      {children}
+    </a>
+  );
+
   return (
-    <footer className='bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-300 border-t border-slate-700/30'>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-6">
+    <footer className='bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-300 border-t border-slate-700/30 font-["Inter"]'>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-y-10 md:gap-y-12 lg:gap-6">
           
-          {/* Contact Column */}
+          {/* 1. Contact Column (Takes 2 columns on desktop) */}
           <div className="lg:col-span-2">
-            <h3 className='text-white font-semibold text-base mb-3 tracking-wide'>Contact Us</h3>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
-                <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center mt-0.5 flex-shrink-0">
-                  <svg className="w-3 h-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
+            <h3 className='text-white font-bold text-lg mb-1 tracking-wider border-b border-blue-500/50 pb-1 w-fit'>Sixth Star Technologies</h3>
+            <div className="space-y-4 text-sm">
+              
+              {/* Address */}
+              <div className="flex items-start gap-4">
+                <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center mt-0.5 flex-shrink-0">
+                  <MapPin className="w-3.5 h-3.5 text-blue-400" />
                 </div>
-                <div>
-                  <p className="text-slate-300 leading-relaxed">
-                    Sixth Star Technologies, Siri Towers,<br/>
-                    1st Floor, No.3 & 4, Fourrts Avenue,<br/>
-                    Annai Indira Nagar, Thoraipakkam,<br/>
-                    Chennai - 600 097
+                <div className='flex-1'>
+                  <p className="text-slate-300 text-base leading-relaxed">
+                    Sixth Star Technologies, Siri Towers,<br className='hidden sm:block'/>
+                    1st Floor, No.3 & 4, Fourrts Avenue,<br className='hidden sm:block'/>
+                    Annai Indira Nagar, Thoraipakkam,<br className='hidden sm:block'/>
+                    <span className='font-semibold text-white'>Chennai - 600 097</span>
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
+
+              {/* Phone */}
+              <div className="flex items-center gap-4">
+                <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-3.5 h-3.5 text-blue-400" />
                 </div>
-                <Link href="tel:+914443869199" className="text-blue-400 hover:text-white transition-colors">(044) 43869199</Link>
+                <AnchorLink href="tel:+914443869199" className="text-blue-400 font-medium hover:text-white transition-colors duration-200 text-base">(044) 43869199</AnchorLink>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                  <svg className="w-3 h-3 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
+
+              {/* Email */}
+              <div className="flex items-center gap-4">
+                <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-3.5 h-3.5 text-blue-400" />
                 </div>
-                <Link href="mailto:sales@sixthstar.in" className="text-blue-400 hover:text-white transition-colors">sales@sixthstar.in</Link>
+                <AnchorLink href="mailto:sales@sixthstar.in" className="text-blue-400 font-medium hover:text-white transition-colors duration-200 text-base">sales@sixthstar.in</AnchorLink>
               </div>
+              
+              {/* Social Media Links - Added for responsiveness/completeness */}
+              {/* <div className="pt-4">
+                <h4 className='text-white font-semibold text-sm mb-3 tracking-wide'>Connect with us</h4>
+                <div className="flex space-x-4">
+                  <SocialIcon Icon={Twitter} href="https://twitter.com/sixthstartech" />
+                  <SocialIcon Icon={Linkedin} href="https://linkedin.com/company/sixth-star-technologies" />
+                  <SocialIcon Icon={Facebook} href="https://facebook.com/sixthstartech" />
+                  <SocialIcon Icon={Globe} href="https://sixthstartech.com" />
+                </div>
+              </div> */}
             </div>
           </div>
 
-          {/* Services Column */}
-          <div>
-            <h3 className='text-white pl-0 font-semibold text-left text-base mb-3 tracking-wide'>Services</h3>
-            <ul className="space-y-2 text-sm pl-0 text-blue-500">
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="/services/incoming-filter">
-              
+          {/* 2. Services Column */}
+          <div className="lg:col-span-1">
+            <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Services</h3>
+            <ul className="space-y-3 text-sm ml-0 lg:ml-[-20px]">
+              <li><AnchorLink className="text-slate-400 ml-0 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/services/incoming-spam-filter-service-provider-chennai">
+                <span className="w-1.5 h-1.5 ml-0 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Incoming Spam Filter
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="/services/outgoing-filter">
-               
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/services/outgoing-spam-filter-service-provider-chennai">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Outgoing Spam Filter
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/mail-services/carbonio-mail">
-                
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/mail-services/carbonio-mail">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Carbonio Mail
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/high-availability">
-               
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/high-availability">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 High Availability
-              </Link></li>
+              </AnchorLink></li>
             </ul>
           </div>
 
-          {/* Company Column */}
-          <div>
-            <h3 className='text-white font-semibold  text-base mb-3 tracking-wide'>Company</h3>
-            <ul className="space-y-2 text-sm text-left pl-0 ">
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="/about">
-                
+          {/* 3. Company Column */}
+          <div className="lg:col-span-1">
+            <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Company</h3>
+            <ul className="space-y-3 text-sm ml-0 lg:ml-[-20px]">
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/about">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 About Us
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="/client">
-               
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px]  hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/client">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Clients
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="/contact">
-               
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px]  hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/contact">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Contact
-              </Link></li>
+              </AnchorLink></li>
             </ul>
           </div>
 
-          {/* Hosting Column */}
-          <div>
-            <h3 className='text-white font-semibold text-base mb-3  text-left tracking-wide'>Hosting</h3>
-            <ul className="space-y-2 text-sm text-left pl-0 ">
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/ssl-certificate">
-              
+          {/* 4. Hosting Column */}
+          <div className="lg:col-span-1">
+            <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Hosting</h3>
+            <ul className="space-y-3 text-sm ml-0 lg:ml-[-20px]">
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/ssl-certificate">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 SSL Certificate
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/servers/dedicated-server">
-               
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/dedicated-server">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Dedicated Hosting
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/servers/vps-server-hosting">
-                
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/vps-server-hosting">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 VPS Hosting
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/servers/cloud-hosting-services">
-                
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/cloud-hosting-services">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Cloud Hosting
-              </Link></li>
-              <li><Link className="text-slate-400 hover:text-white transition-all duration-200 flex items-center group hover:translate-x-1" href="https://sixthstartech.com/servers/web-hosting">
-                
+              </AnchorLink></li>
+              <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/web-hosting">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Web Hosting
-              </Link></li>
+              </AnchorLink></li>
             </ul>
           </div>
 
-          {/* Certification Column */}
-          <div>
-            <h3 className='text-white font-semibold text-base mb-3 tracking-wide'>Certification</h3>
-            <div className="bg-gradient-to-br from-white/5 to-white/10 rounded-xl p-4 border border-slate-600/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10">
+          {/* 5. Certification Column - Takes 2 columns on tablet for better centering */}
+          <div className="lg:col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
+            <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Certification</h3>
+            <div className="bg-gradient-to-br from-white/5 to-white/10 rounded-xl p-1 border border-slate-600/30 transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/20 w-full max-w-[200px] sm:max-w-[250px] lg:max-w-none">
               <img 
-                className='w-full h-auto rounded-lg' 
+               className="w-4/5 md:w-3/5 lg:w-3/5 mx-auto h-auto rounded-lg shadow-xl"
                 src="https://res.cloudinary.com/daggx9p24/image/upload/v1727067938/iso-sixthstartech_uq1nq6.jpg" 
                 alt="ISO Certificate - Sixth Star Technologies" 
+                onError={(e) => { e.target.onerror = null; e.target.src="https://placehold.co/150x100/1e293b/94a3b8?text=ISO+Cert" }}
               />
-              <p className="text-xs text-slate-400 mt-2 text-center">ISO 9001:2015 Certified</p>
+              <p className="text-sm text-slate-400 mt-3 text-center font-medium">ISO 9001:2015 Certified</p>
             </div>
           </div>
 
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-10 pt-4 border-t border-slate-700/30">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+        <div className="mt-8 pt-6 border-t border-slate-700/50">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
             
-            {/* Left Side - Company Info & Social */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-              <div className="flex flex-col gap-2">
-                <div className="text-sm text-slate-300 font-medium">
-                  © {new Date().getFullYear()} Sixth Star Technologies
-                </div>
-                <div className="text-xs text-slate-500">
-                  All rights reserved. Trusted by businesses worldwide.
-                </div>
+            {/* Left Side - Company Info */}
+            <div className="flex flex-col gap-2 order-2 lg:order-1">
+              <div className="text-sm text-slate-400 font-medium">
+                © {new Date().getFullYear()} Sixth Star Technologies
               </div>
-              
-            
+              <div className="text-xs text-slate-600">
+                All rights reserved. Trusted by businesses worldwide.
+              </div>
             </div>
 
-            {/* Right Side - Links & Status */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-              <div className="flex items-center gap-6 text-sm">
-                <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors duration-200">Privacy Policy</Link>
-                <Link href="/terms" className="text-slate-400 hover:text-white transition-colors duration-200">Terms of Service</Link>
-                <Link href="/sitemap" className="text-slate-400 hover:text-white transition-colors duration-200">Sitemap</Link>
-              </div>
-              
-              
-            </div>
+            {/* <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm order-1 lg:order-2">
+                <AnchorLink href="/privacy" className="text-slate-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm">Privacy Policy</AnchorLink>
+                <AnchorLink href="/terms" className="text-slate-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm">Terms of Service</AnchorLink>
+                <AnchorLink href="/sitemap" className="text-slate-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm">Sitemap</AnchorLink>
+                <div className="text-xs text-green-400 bg-green-900/50 px-2 py-1 rounded-full flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    System Status: Operational
+                </div>
+            </div> */}
           </div>
         </div>
       </div>
     </footer>
+  );
+};
 
-
-  )
-}
+export default Footer;

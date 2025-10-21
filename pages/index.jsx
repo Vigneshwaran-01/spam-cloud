@@ -221,7 +221,7 @@ export default function New({ homeData, error }) {
                 {/* Dual CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 mb-6">
                   {/* Primary CTA - Schedule a Demo Call */}
-                  <Link href="#contactForm" className={`group relative inline-flex items-center justify-center bg-gradient-to-r from-emerald-500 to-emerald-600  text-black px-8 py-4 rounded-full font-bold text-base transition-all duration-300  hover:-translate-y-1 overflow-hidden ${isClient ? css(styles.slideInDown) : ""}`}>
+                  <Link href="#contactForm" className={`group relative inline-flex items-center justify-center bg-gradient-to-r from-emerald-500 to-emerald-600  text-black px-6 py-3 rounded-full font-bold text-base transition-all duration-300  hover:-translate-y-1 overflow-hidden ${isClient ? css(styles.slideInDown) : ""}`}>
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <span className="relative flex items-center">
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -235,7 +235,7 @@ export default function New({ homeData, error }) {
                   </Link>
 
                   {/* Secondary CTA - Request a Quote */}
-                  <Link href="#service" className={`group relative inline-flex items-center justify-center border-2 border-emerald-400/50 text-emerald-300 hover:border-emerald-400 hover:text-white hover:bg-emerald-500/10 px-8 py-4 rounded-full font-semibold text-base transition-all duration-300 backdrop-blur-sm ${isClient ? css(styles.slideInDown) : ""}`}>
+                  <Link href="/contact" className={`group relative inline-flex items-center justify-center border-2 border-emerald-400/50 text-emerald-300 hover:border-emerald-400 hover:text-white hover:bg-emerald-500/10 px-6 py-3 rounded-full font-semibold text-base transition-all duration-300 backdrop-blur-sm ${isClient ? css(styles.slideInDown) : ""}`}>
                     <span className="relative flex items-center">
                       <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -387,15 +387,14 @@ export default function New({ homeData, error }) {
 
     {/* Services section starts - Proofpoint inspired design */}
     <section className="proofpoint-services-sec" id='service'>
-      <div className="bg-[#035bfb]">
+      <div className="bg-[#035bfb] py-6">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="proofpoint-hero-content">
                 <h6 className="proofpoint-badge">WE ARE EMAIL SECURITY EXPERTS</h6>
-                <h1 className="proofpoint-main-title">
-                  We secure how people, data and email systems connect across email, cloud and collaboration tools
-                </h1>
+                <h2 className="proofpoint-main-title">
+We protect your inbox and safeguard your business reputation. With advanced spam filters, email encryption solutions. </h2>
               </div>
             </div>
             
@@ -463,7 +462,7 @@ export default function New({ homeData, error }) {
                 </div>
                 <h3>Stop Incoming Threats</h3>
                 <p>Protect against inbound spam, phishing, and malware with advanced AI-based detection.</p>
-                <Link href="/services/incoming-filter" className="service-link">
+                <Link href="/services/incoming-spam-filter-service-provider-chennai" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </div>
@@ -476,7 +475,7 @@ export default function New({ homeData, error }) {
                 </div>
                 <h3>Secure Outbound Communications</h3>
                 <p>Monitor and protect outgoing emails to prevent data loss and ensure compliance.</p>
-                <Link href="/services/outgoing-filter" className="service-link">
+                <Link href="/services/outgoing-spam-filter-service-provider-chennai" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
               </div>
@@ -528,7 +527,7 @@ export default function New({ homeData, error }) {
             <span className="badge-text">WE ARE EMAIL SECURITY EXPERTS</span>
           </div>
           <h2 className="stats-main-title">
-            We secure how people, data and email systems connect across email, cloud and collaboration tools
+SpamCloud is Chennai’s leading secure email service provider, trusted by industries for over 18 years, and with compliance-driven security solutions
           </h2>
           <p className="stats-description">
             Protecting businesses worldwide with cutting-edge email security solutions and advanced threat detection.
@@ -595,15 +594,7 @@ export default function New({ homeData, error }) {
                 </div>
               </div>
 
-              <div className="feature-item" data-feature="testing">
-                <div className="feature-icon">
-                  <i className="fa-solid fa-flask"></i>
-                </div>
-                <div className="feature-content">
-                  <h4>Real-time Testing</h4>
-                  <p>To accelerate the filtering process, the front end test is conducted continuously.</p>
-                </div>
-              </div>
+             
 
               <div className="feature-item" data-feature="protection">
                 <div className="feature-icon">
@@ -879,7 +870,7 @@ export default function New({ homeData, error }) {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       </div>
-      <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-3 font-['Barlow_Condensed'] tracking-tight">
+      <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-3 tracking-tight">
         FREQUENTLY ASKED QUESTIONS
       </h2>
       <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">

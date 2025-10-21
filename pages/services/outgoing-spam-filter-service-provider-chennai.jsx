@@ -128,15 +128,15 @@ const outgoingFilterNew = () => {
   return (
     <div>
       <Head>
-        <title>outgoing spam filter service in chennai - spam cloud</title>
+        <title>Outgoing spam filter service in Chennai - Spam Cloud</title>
         <meta name="description" content="Spam Cloud offers efficient outgoing spam filter services in Chennai to safeguard your emails and enhance security from external threads and fishing attacks." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://spamcloud.in/services/outgoing-filter" />
+        <link rel="canonical" href="https://spamcloud.in/services/outgoing-spam-filter-service-provider-chennai" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content='outgoing spam filter service in chennai - spam cloud' />
         <meta property="og:description" content="Spam Cloud offers efficient outgoing spam filter services in Chennai to safeguard your emails and enhance security from external threads and fishing attacks." />
-        <meta property="og:url" content="https://spamcloud.in/services/outgoing-filter" />
+        <meta property="og:url" content="https://spamcloud.in/services/outgoing-spam-filter-service-provider-chennai" />
         <meta property="og:site_name" content="Sixth Star Technologies" />
       </Head>
 
@@ -190,9 +190,9 @@ const outgoingFilterNew = () => {
               
               <div className="space-y-12">
                 {whyChooseFeatures.map((feature, index) => (
-                  <div key={index} className="relative border-b border-gray-600 pb-8 last:border-b-0">
+                  <div key={index} className="relative  pb-8 ">
                     <div className="flex items-start gap-6">
-                      <div className={`relative z-10 w-12 h-12 ${feature.iconBg} rounded-lg flex items-center justify-center flex-shrink-0 border-2 border-gray-700 shadow-sm`}>
+                      <div className={`relative z-10 w-12 h-12 ${feature.iconBg} rounded-full flex items-center justify-center flex-shrink-0 border-2 border-gray-700 shadow-sm`}>
                         <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
                       </div>
                       <div className="flex-1">

@@ -54,14 +54,14 @@ export default function AboutNew() {
   return (
     <div>
       <Head>
-      <title>about us - Spam cloud</title>
-        <meta name="description" content="get to know about how Spam Cloud's incoming and outgoing spam filters protect your inbox from junk emails and phishing threats and enhance email security." />
+      <title>About SpamCloud | Chennai’s Trusted Secure Email Provider</title>
+        <meta name="description" content="SpamCloud Chennai’s leading secure email provider with 18+ years of expertise. We deliver advanced incoming and outgoing spam filter solutions and more" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://spamcloud.in/about" />
         <meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content='about us - Spam cloud' />
-	<meta property="og:description" content="get to know about how Spam Cloud's incoming and outgoing spam filters protect your inbox from junk emails and phishing threats and enhance email security." />
+	<meta property="og:description" content="SpamCloud Chennai’s leading secure email provider with 18+ years of expertise. We deliver advanced incoming and outgoing spam filter solutions and more" />
 	<meta property="og:url" content="https://spamcloud.in/about" />
 	<meta property="og:site_name" content="Sixth Star Technologies" />
   <script
