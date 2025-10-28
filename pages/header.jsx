@@ -32,7 +32,7 @@ export default function Header() {
   const navLinkClasses = "text-white hover:text-emerald-400 transition-all duration-200 font-medium text-sm lg:text-md cursor-pointer relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-emerald-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full";
   const buttonBaseClasses = "flex items-center gap-2 transition-all duration-200 font-medium text-sm";
   const iconButtonClasses = `${buttonBaseClasses} text-white hover:text-emerald-400 hover:bg-white/10 px-3 py-2 rounded-md`;
-  const dropdownClassesBase = "absolute top-full left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-xl border border-gray-700 transition-all duration-200 z-[10000] pointer-events-auto";
+  const dropdownClassesBase = "absolute top-full left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-xl border border-gray-700 transition-all duration-200 z-[10000] pointer-events-auto overflow-hidden";
   const dropdownLinkClasses = "block px-4 py-3 text-white hover:bg-gray-700 hover:text-emerald-400 transition-colors duration-200 text-sm";
 
   return (
