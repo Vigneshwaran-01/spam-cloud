@@ -24,7 +24,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className='bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-300 border-t border-slate-700/30 font-["Inter"]'>
+    <footer className='bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-300 border-t border-slate-700/30 font-[Barlow Condensed] '>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-y-10 md:gap-y-12 lg:gap-6">
           
@@ -64,37 +64,24 @@ const Footer = () => {
                 <AnchorLink href="mailto:sales@sixthstar.in" className="text-blue-400 font-medium hover:text-white transition-colors duration-200 text-base">sales@sixthstar.in</AnchorLink>
               </div>
               
-              {/* Social Media Links - Added for responsiveness/completeness */}
-              {/* <div className="pt-4">
-                <h4 className='text-white font-semibold text-sm mb-3 tracking-wide'>Connect with us</h4>
-                <div className="flex space-x-4">
-                  <SocialIcon Icon={Twitter} href="https://twitter.com/sixthstartech" />
-                  <SocialIcon Icon={Linkedin} href="https://linkedin.com/company/sixth-star-technologies" />
-                  <SocialIcon Icon={Facebook} href="https://facebook.com/sixthstartech" />
-                  <SocialIcon Icon={Globe} href="https://sixthstartech.com" />
-                </div>
-              </div> */}
+              
             </div>
           </div>
 
           {/* 2. Services Column */}
           <div className="lg:col-span-1">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Services</h3>
-            <ul className="space-y-3 text-sm ml-0 lg:ml-[-20px]">
+            <ul className="space-y-3 text-sm ml-0 lg:ml-[-30px]">
               <li><AnchorLink className="text-slate-400 ml-0 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/services/incoming-spam-filter-service-provider-chennai">
-                <span className="w-1.5 h-1.5 ml-0 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Incoming Spam Filter
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/services/outgoing-spam-filter-service-provider-chennai">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Outgoing Spam Filter
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/mail-services/carbonio-mail">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Carbonio Mail
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/high-availability">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 High Availability
               </AnchorLink></li>
             </ul>
@@ -103,17 +90,14 @@ const Footer = () => {
           {/* 3. Company Column */}
           <div className="lg:col-span-1">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Company</h3>
-            <ul className="space-y-3 text-sm ml-0 lg:ml-[-20px]">
+            <ul className="space-y-3 text-sm ml-0 lg:ml-[-30px]">
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/about">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 About Us
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px]  hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/client">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Clients
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px]  hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/contact">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Contact
               </AnchorLink></li>
             </ul>
@@ -122,25 +106,20 @@ const Footer = () => {
           {/* 4. Hosting Column */}
           <div className="lg:col-span-1">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Hosting</h3>
-            <ul className="space-y-3 text-sm ml-0 lg:ml-[-20px]">
+            <ul className="space-y-3 text-sm ml-0 lg:ml-[-30px]">
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/ssl-certificate">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 SSL Certificate
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/dedicated-server">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Dedicated Hosting
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/vps-server-hosting">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 VPS Hosting
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/cloud-hosting-services">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Cloud Hosting
               </AnchorLink></li>
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/servers/web-hosting">
-                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mr-2 opacity-50 group-hover:opacity-100 transition-opacity"></span>
                 Web Hosting
               </AnchorLink></li>
             </ul>

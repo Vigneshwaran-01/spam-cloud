@@ -394,7 +394,7 @@ export default function New({ homeData, error }) {
               <div className="proofpoint-hero-content">
                 <h6 className="proofpoint-badge">WE ARE EMAIL SECURITY EXPERTS</h6>
                 <h2 className="proofpoint-main-title">
-We protect your inbox and safeguard your business reputation. With advanced spam filters, email encryption solutions. </h2>
+ Protect your inbox and safeguard your business reputation  With advanced email filter solutions. </h2>
               </div>
             </div>
             
@@ -415,7 +415,7 @@ We protect your inbox and safeguard your business reputation. With advanced spam
                     <div className="proofpoint-carousel-card stat-card">
                       <div className="card-content">
                         <div className="stat-badge">STOPPING</div>
-                        <h2 className="stat-number">95M</h2>
+                        <h2 className="stat-number">200k</h2>
                         <p className="stat-label">BEC attacks per year</p>
                       </div>
                     </div>
@@ -423,7 +423,7 @@ We protect your inbox and safeguard your business reputation. With advanced spam
                     <div className="proofpoint-carousel-card stat-card">
                       <div className="card-content">
                         <div className="stat-badge">PROTECTING</div>
-                        <h2 className="stat-number">2M+</h2>
+                        <h2 className="stat-number">25k+</h2>
                         <p className="stat-label">customers worldwide</p>
                       </div>
                     </div>
@@ -527,7 +527,7 @@ We protect your inbox and safeguard your business reputation. With advanced spam
             <span className="badge-text">WE ARE EMAIL SECURITY EXPERTS</span>
           </div>
           <h2 className="stats-main-title">
-SpamCloud is Chennai’s leading secure email service provider, trusted by industries for over 18 years, and with compliance-driven security solutions
+SpamCloud is  trusted  by industries in Chennai for over 18 years with compliance-driven email security solutions 
           </h2>
           <p className="stats-description">
             Protecting businesses worldwide with cutting-edge email security solutions and advanced threat detection.
@@ -871,7 +871,7 @@ SpamCloud is Chennai’s leading secure email service provider, trusted by indus
         </svg>
       </div>
       <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-3 tracking-tight">
-        FREQUENTLY ASKED QUESTIONS
+        Frequently Asked Questions
       </h2>
       <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
         Get answers to common questions about our email security services and spam protection solutions.
