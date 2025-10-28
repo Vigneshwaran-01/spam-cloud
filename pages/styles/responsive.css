@@ -870,7 +870,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
         }
 
         .row {
-          padding: 10px;
+          padding: 4px;
         }
         .container {
           padding: 5px;
@@ -1213,6 +1213,148 @@ font-size: 45px;
         .blog-slider .swiper-button-next::after, .blog-slider .swiper-button-prev::after {
             font-size: 20px;
             font-weight: bold;
+        }
+        
+        /* FAQ Section Mobile Fixes */
+        .grid.lg\:grid-cols-2 {
+            grid-template-columns: 1fr !important;
+            gap: 1rem;
+        }
+        
+        .grid.lg\:grid-cols-2 .order-2.lg\:order-1,
+        .grid.lg\:grid-cols-2 .order-1.lg\:order-2 {
+            order: unset;
+        }
+        
+        /* FAQ Container Mobile Adjustments */
+        .py-16 {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+        }
+        
+        .container.mx-auto {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        
+        /* FAQ Cards Mobile Responsive */
+        .bg-white.rounded-2xl {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100% !important;
+        }
+        
+        .px-5.py-4 {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+        
+        /* Blue Card Section (Proofpoint) Mobile Fixes */
+        .proofpoint-services-sec {
+            overflow-x: hidden !important;
+        }
+        
+        .proofpoint-services-sec .container-fluid {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        
+        .proofpoint-services-sec .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        
+        .proofpoint-services-sec .col-lg-6 {
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+        
+        .proofpoint-hero-content {
+            padding-right: 1rem !important;
+            text-align: center;
+        }
+        
+        .proofpoint-main-title {
+            font-size: 1.5rem !important;
+            line-height: 1.3 !important;
+            padding: 0 0.5rem !important;
+        }
+        
+        .proofpoint-badge {
+            font-size: 0.75rem !important;
+            padding: 0.5rem 1rem !important;
+        }
+        
+        /* Carousel Mobile Fixes */
+        .proofpoint-carousel-container {
+            height: auto !important;
+            min-height: 300px !important;
+            padding: 0 !important;
+            width: 100% !important;
+            overflow: hidden !important;
+        }
+        
+        .carousel-wrapper {
+            width: 100% !important;
+            overflow: visible !important;
+            padding: 0 !important;
+        }
+        
+        .carousel-track {
+            display: flex !important;
+            gap: 0.75rem !important;
+            padding: 0 1rem !important;
+            width: calc(100% - 2rem) !important;
+            justify-content: flex-start !important;
+        }
+        
+        .proofpoint-carousel-card {
+            min-width: calc(90vw - 2rem) !important;
+            width: calc(90vw - 2rem) !important;
+            max-width: 320px !important;
+            height: auto !important;
+            padding: 1.25rem 1rem !important;
+            flex-shrink: 0 !important;
+            margin: 0 !important;
+        }
+        
+        .proofpoint-carousel-card h4 {
+            font-size: 1.1rem !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        .proofpoint-carousel-card .stat-number {
+            font-size: 2rem !important;
+        }
+        
+        .proofpoint-cta-link {
+            padding: 0.75rem 1rem !important;
+            font-size: 0.9rem !important;
+        }
+        
+        /* Service Cards Mobile Fixes */
+        .proofpoint-services-cards-section {
+            padding: 2rem 0 !important;
+        }
+        
+        .proofpoint-services-cards-section .container {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        
+        .proofpoint-service-card {
+            padding: 1.5rem 1rem !important;
+            margin-bottom: 1rem !important;
+        }
+        
+        .proofpoint-service-card h3 {
+            font-size: 1.2rem !important;
+        }
+        
+        .proofpoint-service-card p {
+            font-size: 0.9rem !important;
         }
         
 }

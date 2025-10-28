@@ -2467,23 +2467,86 @@ padding: 5px;
 
 @media (max-width: 768px) {
   .proofpoint-gradient-bg {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   
   .proofpoint-main-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    padding: 0 1rem;
+  }
+  
+  .proofpoint-hero-content {
+    padding-right: 1rem;
+    text-align: center;
+  }
+  
+  .proofpoint-carousel-container {
+    height: auto;
+    min-height: 250px;
+    padding: 0;
+  }
+  
+  .carousel-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .proofpoint-carousel-card {
+    min-width: 260px;
+    width: 260px;
+    padding: 1.5rem 1rem;
+    flex-shrink: 0;
   }
   
   .proofpoint-service-card {
-    padding: 30px 20px;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
   }
   
   .proofpoint-services-cards {
-    margin-top: 40px;
+    margin-top: 2rem;
   }
   
   .proofpoint-bottom-text {
-    margin-top: 40px;
+    margin-top: 2rem;
+  }
+  
+  /* FAQ Section Mobile Improvements */
+  .py-16 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .container.mx-auto {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .grid.lg\:grid-cols-2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .text-3xl.lg\:text-4xl {
+    font-size: 1.875rem;
+  }
+  
+  .bg-white.rounded-2xl {
+    margin: 0;
+  }
+  
+  .px-5.py-4 {
+    padding: 1rem;
+  }
+  
+  .pl-12 {
+    padding-left: 1rem;
   }
 }
 

@@ -84,6 +84,7 @@ export default function New({ homeData, error }) {
   const [activeTestimonial, setActiveTestimonial] = useState(people[0].testimonial);
   const [isClient, setIsClient] = useState(false);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -102,8 +103,30 @@ export default function New({ homeData, error }) {
     }
   }, [currentSlideIndex]);
 
+  // Auto-scroll functionality
+  useEffect(() => {
+    if (!isPaused) {
+      const autoScrollInterval = setInterval(() => {
+        setCurrentSlideIndex(prevIndex => {
+          // Loop back to first slide after the last one (4 slides total)
+          return prevIndex >= 4 ? 1 : prevIndex + 1;
+        });
+      }, 4000); // Change slide every 4 seconds
+
+      return () => clearInterval(autoScrollInterval);
+    }
+  }, [isPaused]);
+
   const currentSlide = (n) => {
     setCurrentSlideIndex(n);
+  };
+
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
   };
 
   if (error) {
