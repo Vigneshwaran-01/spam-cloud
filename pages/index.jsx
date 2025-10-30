@@ -15,6 +15,7 @@ import {people} from '../lib/data/testi';
 import ContactSec from './section/ContactSec';
 import Blogslider from './section/Blogslider';
 import { homeSchema } from '../lib/data/schema'
+import ProofpointCarousel from './section/ProofpointCarousel';
 
 
 const styles = StyleSheet.create({
@@ -377,31 +378,7 @@ export default function New({ homeData, error }) {
           </div>
         </div>
 
-        <style jsx>{`
-          @keyframes grid-move {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
-          }
-          @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-          }
-          @keyframes scan {
-            0% { top: 0%; opacity: 0; }
-            50% { opacity: 1; }
-            100% { top: 100%; opacity: 0; }
-          }
-          @keyframes slideInFilter {
-            0% { 
-              transform: translateX(100px); 
-              opacity: 0; 
-            }
-            100% { 
-              transform: translateX(0); 
-              opacity: 1; 
-            }
-          }
-        `}</style>
+       
       </section>
   {/* Banner section ends */}
 
@@ -421,107 +398,11 @@ export default function New({ homeData, error }) {
               </div>
             </div>
             
-            <div className="col-lg-6">
-              <div className="proofpoint-carousel-container">
-                <div className="carousel-wrapper">
-                  <div className="carousel-track" id="carouselTrack">
-                    
-                    <div className="proofpoint-carousel-card">
-                      <div className="card-content">
-                        <h4>Numbers only ever tell part of the story.</h4>
-                        <Link href="/contact" className="proofpoint-cta-link">
-                          See customer stories <i className="fa-solid fa-arrow-right"></i>
-                        </Link>
-                      </div>
-                    </div>
-                    
-                    <div className="proofpoint-carousel-card stat-card">
-                      <div className="card-content">
-                        <div className="stat-badge">STOPPING</div>
-                        <h2 className="stat-number">200k</h2>
-                        <p className="stat-label">BEC attacks per year</p>
-                      </div>
-                    </div>
-                    
-                    <div className="proofpoint-carousel-card stat-card">
-                      <div className="card-content">
-                        <div className="stat-badge">PROTECTING</div>
-                        <h2 className="stat-number">25k+</h2>
-                        <p className="stat-label">customers worldwide</p>
-                      </div>
-                    </div>
-                    
-                    <div className="proofpoint-carousel-card stat-card">
-                      <div className="card-content">
-                        <div className="stat-badge">SECURING</div>
-                        <h2 className="stat-number">83</h2>
-                        <p className="stat-label">of the F100 use our solutions</p>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-                
-                <div className="carousel-dots">
-                  <span className="dot active" onClick={() => currentSlide(1)}></span>
-                  <span className="dot" onClick={() => currentSlide(2)}></span>
-                  <span className="dot" onClick={() => currentSlide(3)}></span>
-                  <span className="dot" onClick={() => currentSlide(4)}></span>
-                </div>
-              </div>
-            </div>
+           <ProofpointCarousel />
           </div>
         </div>
       </div>
-      <style jsx>{`
-  /* carousel layout */
-  .carousel-wrapper {
-    overflow: hidden;
-  }
-  .carousel-track {
-    display: flex;
-    gap: 20px;                /* gap used in translateX calculation */
-    transition: transform 0.4s ease;
-    align-items: stretch;
-    will-change: transform;
-    padding-bottom: 6px;
-  }
-
-  /* force equal card widths */
-  .proofpoint-carousel-card {
-    flex: 0 0 320px;          /* fixed width for each card */
-    width: 320px;
-    box-sizing: border-box;
-    min-height: 180px;
-    border-radius: 12px;
-    background: #061325;      /* adjust to match current design */
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .proofpoint-carousel-card .card-content {
-    width: 100%;
-  }
-
-  /* responsive adjustments */
-  @media (max-width: 992px) {
-    .proofpoint-carousel-card {
-      flex: 0 0 280px;
-      width: 280px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .proofpoint-carousel-card {
-      flex: 0 0 180px;
-      width: 170px;
-      
-     
-    }
-  }
-`}</style>
+  
       {/* Services Cards Section - Below the main hero */}
       <div className="proofpoint-services-cards-section">
         <div className="container">
