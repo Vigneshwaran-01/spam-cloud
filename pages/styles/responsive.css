@@ -22,7 +22,7 @@
     
     /* Hero section title adjustments */
     .text-4xl, .text-5xl, .text-6xl {
-        font-size: 2.25rem !important;
+        font-size: 3.25rem !important;
     }
     
     /* Service section adjustments */
@@ -32,7 +32,7 @@
     
     /* Proofpoint section adjustments */
     .proofpoint-main-title {
-        font-size: 3rem !important;
+        font-size: 2.7rem !important;
         line-height: 1.4 !important;
         margin-left: 40px !important;
     }
@@ -1437,7 +1437,7 @@ font-size: 45px;
             height: auto !important;
             min-height: 300px !important;
             padding: 0 !important;
-            width: 100% !important;
+            width: 120% !important;
             overflow: hidden !important;
         }
         

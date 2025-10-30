@@ -473,7 +473,55 @@ export default function New({ homeData, error }) {
           </div>
         </div>
       </div>
+      <style jsx>{`
+  /* carousel layout */
+  .carousel-wrapper {
+    overflow: hidden;
+  }
+  .carousel-track {
+    display: flex;
+    gap: 20px;                /* gap used in translateX calculation */
+    transition: transform 0.4s ease;
+    align-items: stretch;
+    will-change: transform;
+    padding-bottom: 6px;
+  }
+
+  /* force equal card widths */
+  .proofpoint-carousel-card {
+    flex: 0 0 320px;          /* fixed width for each card */
+    width: 320px;
+    box-sizing: border-box;
+    min-height: 180px;
+    border-radius: 12px;
+    background: #061325;      /* adjust to match current design */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .proofpoint-carousel-card .card-content {
+    width: 100%;
+  }
+
+  /* responsive adjustments */
+  @media (max-width: 992px) {
+    .proofpoint-carousel-card {
+      flex: 0 0 280px;
+      width: 280px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .proofpoint-carousel-card {
+      flex: 0 0 180px;
+      width: 170px;
       
+     
+    }
+  }
+`}</style>
       {/* Services Cards Section - Below the main hero */}
       <div className="proofpoint-services-cards-section">
         <div className="container">

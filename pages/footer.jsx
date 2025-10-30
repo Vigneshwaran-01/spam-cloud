@@ -30,26 +30,32 @@ const Footer = () => {
           
           {/* 1. Contact Column (Takes 2 columns on desktop) */}
           <div className="lg:col-span-2">
-            <h3 className='text-white font-bold text-lg mb-1 tracking-wider border-b border-blue-500/50 pb-1 w-fit'>Sixth Star Technologies</h3>
-            <div className="space-y-4 text-sm">
-              
-              {/* Address */}
-              <div className="flex items-start gap-4">
-                <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center mt-0.5 flex-shrink-0">
+            <div className="flex items-start gap-4 ">
+            <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center mt-0.5 flex-shrink-0">
                   <MapPin className="w-3.5 h-3.5 text-blue-400" />
+                 
                 </div>
                 <div className='flex-1'>
-                  <p className="text-slate-300 text-base leading-relaxed">
+                 <h3 className='text-white font-bold text-lg mb-1 tracking-wider   w-fit'>Sixth Star Technologies</h3>
+                 </div>
+            </div>
+            <div className="space-y-1 text-sm">
+              
+              {/* Address */}
+              <div className="flex items-start gap-2 mt-2 mb-0 ">
+                
+                <div className='flex-1 ml-12'>
+                  <p className="text-slate-300 text-base leading-relaxed ">
                     Sixth Star Technologies, Siri Towers,<br className='hidden sm:block'/>
                     1st Floor, No.3 & 4, Fourrts Avenue,<br className='hidden sm:block'/>
                     Annai Indira Nagar, Thoraipakkam,<br className='hidden sm:block'/>
-                    <span className='font-semibold text-white'>Chennai - 600 097</span>
+                    Chennai - 600 097
                   </p>
                 </div>
               </div>
 
-              {/* Phone */}
-              <div className="flex items-center gap-4">
+             <div className='space-y-3'>
+              <div className="flex items-center gap-4 ">
                 <div className="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-3.5 h-3.5 text-blue-400" />
                 </div>
@@ -63,7 +69,7 @@ const Footer = () => {
                 </div>
                 <AnchorLink href="mailto:sales@sixthstar.in" className="text-blue-400 font-medium hover:text-white transition-colors duration-200 text-base">sales@sixthstar.in</AnchorLink>
               </div>
-              
+              </div>
               
             </div>
           </div>
@@ -71,7 +77,7 @@ const Footer = () => {
           {/* 2. Services Column */}
           <div className="lg:col-span-1">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Services</h3>
-            <ul className="space-y-3 text-sm ml-0 lg:ml-[-30px]">
+            <ul className="space-y-3 text-sm ml-0  mt-3 lg:ml-[-30px]">
               <li><AnchorLink className="text-slate-400 ml-0 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/services/incoming-spam-filter-service-provider-chennai">
                 Incoming Spam Filter
               </AnchorLink></li>
@@ -90,7 +96,7 @@ const Footer = () => {
           {/* 3. Company Column */}
           <div className="lg:col-span-1">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Company</h3>
-            <ul className="space-y-3 text-sm ml-0 lg:ml-[-30px]">
+            <ul className="space-y-3 text-sm mt-3  ml-0 lg:ml-[-30px]">
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="/about">
                 About Us
               </AnchorLink></li>
@@ -106,7 +112,7 @@ const Footer = () => {
           {/* 4. Hosting Column */}
           <div className="lg:col-span-1">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Hosting</h3>
-            <ul className="space-y-3 text-sm ml-0 lg:ml-[-30px]">
+            <ul className="space-y-3 text-sm mt-3 ml-0 lg:ml-[-30px]">
               <li><AnchorLink className="text-slate-400 text-[16px] hover:text-blue-400 transition-all duration-200 flex items-center group hover:translate-x-0.5" href="https://sixthstartech.com/ssl-certificate">
                 SSL Certificate
               </AnchorLink></li>
@@ -128,7 +134,7 @@ const Footer = () => {
           {/* 5. Certification Column - Takes 2 columns on tablet for better centering */}
           <div className="lg:col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
             <h3 className='text-white font-semibold text-base mb-1 tracking-wide'>Certification</h3>
-            <div className="bg-gradient-to-br from-white/5 to-white/10 rounded-xl p-1 border border-slate-600/30 transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/20 w-full max-w-[200px] sm:max-w-[250px] lg:max-w-none">
+            <div className="bg-gradient-to-br from-white/5 to-white/10 rounded-xl p-1 border border-slate-600/30 transition-all duration-300 hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/20 w-full max-w-[200px] mt-3 sm:max-w-[250px] lg:max-w-none">
               <img 
                className="w-4/5 md:w-3/5 lg:w-3/5 mx-auto h-auto rounded-lg shadow-xl"
                 src="https://res.cloudinary.com/daggx9p24/image/upload/v1727067938/iso-sixthstartech_uq1nq6.jpg" 

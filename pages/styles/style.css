@@ -2246,11 +2246,15 @@ padding: 5px;
 /* Carousel Styles */
 .proofpoint-carousel-container {
   position: relative;
+  /* background-color: #059669; */
   height: 450px;
+  max-width: 60%;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  column-gap: 50px;
 }
 
 .carousel-wrapper {
@@ -2384,6 +2388,8 @@ padding: 5px;
 .proofpoint-services-cards-section {
   padding: 80px 0;
   background: #011333;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .proofpoint-service-card {
@@ -2565,7 +2571,7 @@ padding: 5px;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 80px;
@@ -2672,6 +2678,7 @@ padding: 5px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 24px;
   padding: 40px 30px;
+  
   position: relative;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2680,11 +2687,7 @@ padding: 5px;
   cursor: pointer;
 }
 
-.stat-card:hover {
-  transform: translateY(-10px) rotateX(5deg);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-  border-color: rgba(16, 185, 129, 0.5);
-}
+
 
 .card-inner {
   position: relative;
@@ -2692,20 +2695,8 @@ padding: 5px;
   text-align: center;
 }
 
-.card-glow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
 
-.stat-card:hover .card-glow {
-  opacity: 1;
-}
+
 
 /* Story Card Specific */
 .story-card {
@@ -2978,7 +2969,7 @@ padding: 5px;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10px;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 80px;
@@ -3511,7 +3502,8 @@ padding: 5px;
 
 /* Tab Content */
 .modern-tab-content {
-  background: white;
+ 
+  /* background: white; */
   border-radius: 12px;
   padding: 50px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -3519,6 +3511,7 @@ padding: 5px;
 
 .modern-tab-layout {
   display: grid;
+ 
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
@@ -3745,4 +3738,13 @@ padding: 5px;
 .swiper-equal-height .swiper-slide {
   height: auto;
   display: flex;
+}
+
+
+@media (max-width: 992px) {
+  .proofpoint-carousel-container {
+    max-width: 100%;
+    padding: 25px;
+    height: auto; /* allow it to shrink on mobile */
+  }
 }

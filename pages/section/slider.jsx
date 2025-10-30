@@ -135,7 +135,7 @@ const ClientSlider = () => {
                                     <img 
                                         src={logo} 
                                         alt={`Client logo ${index + 1}`}
-                                        className="max-h-12 max-w-38 object-cover filter  hover:grayscale-0 transition-all duration-300"
+                                        className="max-h-18 max-w-38 object-cover filter  hover:grayscale-0 transition-all duration-300"
                                         loading="lazy"
                                     />
                                 </div>
@@ -153,7 +153,7 @@ const ClientSlider = () => {
                                     <img 
                                         src={logo} 
                                         alt={`Client logo ${index + 1}`}
-                                        className="max-h-12 max-w-38 object-cover filter  hover:grayscale-0 transition-all duration-300"
+                                        className="max-h-18 max-w-38 object-cover filter  hover:grayscale-0 transition-all duration-300"
                                         loading="lazy"
                                     />
                                 </div>
