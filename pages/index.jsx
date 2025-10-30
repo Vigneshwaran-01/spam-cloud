@@ -220,7 +220,7 @@ export default function New({ homeData, error }) {
                 </div> */}
 
                 {/* Enhanced Title with Better Typography */}
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight text-left relative">
+                <h1 className="text-4xl lg:text-10xl xl:text-6xl font-bold mb-6 leading-tight text-left relative">
                   <span className="bg-gradient-to-r from-white via-emerald-200 to-cyan-200 bg-clip-text text-transparent">
                     Best email security
                   </span>
@@ -237,7 +237,7 @@ export default function New({ homeData, error }) {
                 </h1>
 
                 {/* Enhanced Description */}
-                <p className="text-lg lg:text-xl text-gray-300 mb-8 leading-relaxed max-w-lg font-light">
+                <p className="text-lg lg:text-xl ml-2 text-gray-300 mb-8 leading-relaxed max-w-lg font-light">
                   Keep your emails safe and protected with SpamCloud's secure spam filtering solutions
                 </p>
 
