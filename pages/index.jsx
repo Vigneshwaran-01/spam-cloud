@@ -381,7 +381,7 @@ export default function New({ homeData, error }) {
             <div className="col-lg-6">
               <div className="proofpoint-hero-content">
                 <h6 className="proofpoint-badge">WE ARE EMAIL SECURITY EXPERTS</h6>
-                <h2 className="proofpoint-main-title">
+                <h2 className="proofpoint-main-title text-justify">
  Protect your inbox and safeguard your business reputation  With advanced email filter solutions. </h2>
               </div>
             </div>
@@ -401,7 +401,7 @@ export default function New({ homeData, error }) {
                   <i className="fi fi-ts-envelope-download"></i>
                 </div>
                 <h3>Stop Incoming Threats</h3>
-                <p className='text-justify pt-3 text-justify'>Protect against inbound spam, phishing, and malware with advanced AI-based detection.</p>
+                <p className='text-justify  text-justify'>Protect against inbound spam, phishing, and malware with advanced AI-based detection.</p>
                 <Link href="/services/incoming-spam-filter-service-provider-chennai" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -440,7 +440,7 @@ export default function New({ homeData, error }) {
                   <i className="fi fi-ss-email-pending"></i>
                 </div>
                 <h3>Carbonio Mail Platform</h3>
-                <p className='text-justify pt-3'>Modern, secure email platform with advanced collaboration tools and enterprise security.</p>
+                <p className='text-justify '>Modern, secure email platform with advanced collaboration tools and enterprise security.</p>
                 <Link href="/contact" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -466,7 +466,7 @@ export default function New({ homeData, error }) {
           <div className="stats-badge">
             <span className="badge-text">WE ARE EMAIL SECURITY EXPERTS</span>
           </div>
-          <h2 className="stats-main-title text-red-500 text-justify ">
+          <h2 className="stats-main-title text-red-500 text-justify">
          SpamCloud is  trusted  by top industries in Chennai for over 18 years with compliance driven email security solutions 
           </h2>
           <p className="stats-description">
