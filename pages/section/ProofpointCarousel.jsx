@@ -108,7 +108,7 @@ const ProofpointCarousel = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className={`proofpoint-carousel-card flex-shrink-0 w-full md:w-[80%] lg:w-[60%] px-4 ${card.type === 'stat' ? 'stat-card' : ''} ${
+                className={`proofpoint-carousel-card flex-shrink-0 w-full sm:w-[40%] md:w-[80%] lg:w-[60%] px-4 ${card.type === 'stat' ? 'stat-card' : ''} ${
                   index === currentIndex ? 'active' : ''
                 }`}
                 style={{

@@ -381,7 +381,7 @@ export default function New({ homeData, error }) {
             <div className="col-lg-6">
               <div className="proofpoint-hero-content">
                 <h6 className="proofpoint-badge">WE ARE EMAIL SECURITY EXPERTS</h6>
-                <h2 className="proofpoint-main-title text-justify">
+                <h2 className="proofpoint-main-title ">
  Protect your inbox and safeguard your business reputation  With advanced email filter solutions. </h2>
               </div>
             </div>
