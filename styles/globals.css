@@ -229,7 +229,7 @@ body {
     /* Adjust grid gaps */
     .modern-stats-container,
     .modern-features-container {
-      gap: 2rem !important;
+      gap: 8rem !important;
     }
     
     /* Reduce service card padding */

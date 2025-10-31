@@ -131,7 +131,7 @@
     
     /* Image adjustments */
     .stats-dashboard-image {
-        max-width: 100% !important;
+        max-width: 120% !important;
         height: auto !important;
     }
     

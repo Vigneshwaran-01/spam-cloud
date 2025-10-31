@@ -466,8 +466,8 @@ export default function New({ homeData, error }) {
           <div className="stats-badge">
             <span className="badge-text">WE ARE EMAIL SECURITY EXPERTS</span>
           </div>
-          <h2 className="stats-main-title">
-SpamCloud is  trusted  by industries in Chennai for over 18 years with compliance-driven email security solutions 
+          <h2 className="stats-main-title text-red-500 ">
+<span className='text-green-500'>SpamCloud</span> is  trusted  by top industries in Chennai for over 18 years with compliance driven email security solutions 
           </h2>
           <p className="stats-description">
             Protecting businesses worldwide with cutting-edge email security solutions and advanced threat detection.
