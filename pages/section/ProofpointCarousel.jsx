@@ -123,7 +123,7 @@ useEffect(() => {
   </div>
 </div>
 
-  );
+  );   
 };
 
 export default ProofpointCarousel;
