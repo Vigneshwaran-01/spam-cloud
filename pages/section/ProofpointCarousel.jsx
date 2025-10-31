@@ -93,7 +93,7 @@ const ProofpointCarousel = () => {
         
         <button 
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300 mr-2"
+          className="absolute right-0  top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 p-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300 mr-2"
           aria-label="Next slide"
         >
           <FiChevronRight className="h-5 w-5" />

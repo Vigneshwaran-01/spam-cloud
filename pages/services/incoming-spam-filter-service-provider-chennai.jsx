@@ -215,7 +215,7 @@ const IncomingFilterNew = () => {
                         <h3 className="text-2xl font-bold text-white mb-4">
                           {feature.title}
                         </h3>
-                        <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                        <p className="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
                           {feature.description}
                         </p>
                         {feature.learnMore && (

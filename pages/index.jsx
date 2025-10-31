@@ -401,7 +401,7 @@ export default function New({ homeData, error }) {
                   <i className="fi fi-ts-envelope-download"></i>
                 </div>
                 <h3>Stop Incoming Threats</h3>
-                <p>Protect against inbound spam, phishing, and malware with advanced AI-based detection.</p>
+                <p className='text-justify pt-3 text-justify'>Protect against inbound spam, phishing, and malware with advanced AI-based detection.</p>
                 <Link href="/services/incoming-spam-filter-service-provider-chennai" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -414,7 +414,7 @@ export default function New({ homeData, error }) {
                   <i className="fi fi-ts-envelope-dot"></i>
                 </div>
                 <h3>Secure Outbound Communications</h3>
-                <p>Monitor and protect outgoing emails to prevent data loss and ensure compliance.</p>
+                <p className='text-justify'>Monitor and protect outgoing emails to prevent data loss and ensure compliance.</p>
                 <Link href="/services/outgoing-spam-filter-service-provider-chennai" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -427,7 +427,7 @@ export default function New({ homeData, error }) {
                   <i className="fi fi-bs-mailbox-envelope"></i>
                 </div>
                 <h3>Email Archiving & Compliance</h3>
-                <p>Comprehensive email archiving solution for regulatory compliance and data management.</p>
+                <p className='text-justify'>Comprehensive email archiving solution for regulatory compliance and data management.</p>
                 <Link href="/contact" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -440,7 +440,7 @@ export default function New({ homeData, error }) {
                   <i className="fi fi-ss-email-pending"></i>
                 </div>
                 <h3>Carbonio Mail Platform</h3>
-                <p>Modern, secure email platform with advanced collaboration tools and enterprise security.</p>
+                <p className='text-justify pt-3'>Modern, secure email platform with advanced collaboration tools and enterprise security.</p>
                 <Link href="/contact" className="service-link">
                   Learn more <i className="fa-solid fa-arrow-right"></i>
                 </Link>
@@ -466,8 +466,8 @@ export default function New({ homeData, error }) {
           <div className="stats-badge">
             <span className="badge-text">WE ARE EMAIL SECURITY EXPERTS</span>
           </div>
-          <h2 className="stats-main-title text-red-500 ">
-<span className='text-green-500'>SpamCloud</span> is  trusted  by top industries in Chennai for over 18 years with compliance driven email security solutions 
+          <h2 className="stats-main-title text-red-500 text-justify ">
+         SpamCloud is  trusted  by top industries in Chennai for over 18 years with compliance driven email security solutions 
           </h2>
           <p className="stats-description">
             Protecting businesses worldwide with cutting-edge email security solutions and advanced threat detection.
@@ -908,7 +908,7 @@ export default function New({ homeData, error }) {
                 <div className="px-5 pb-4">
                   <div className="pl-12">
                     <div className="w-full h-px bg-gradient-to-r from-slate-200 to-transparent mb-3"></div>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-slate-600 leading-relaxed text-justify">
                       {faq.answer}
                     </p>
                   </div>

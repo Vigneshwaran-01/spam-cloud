@@ -89,8 +89,8 @@ export default function AboutNew() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-              <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium">Spam filters are utilized to process incoming emails and prevent spam before it reaches the user's inbox. Its major function is to detect and eliminate the junk emails getting into the user's accounts. To avoid spam emails, our company offered efficient spam filters to manage and provide spam-free inboxes. We offer Incoming and Outgoing spam filters based on your grade of protection.</p>
-              <p className="text-lg text-slate-600 leading-relaxed font-medium">We offer a Cloud-based Spam filter identifies phishing that damages computer, server, or computer network. Once the spam filter is installed, you will get an administration portal where you can manage main features whitelists and blacklists management, subject or content filters, virus identification, email recovery, and quarantine blocking spam.</p>
+              <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium text-justify">Spam filters are utilized to process incoming emails and prevent spam before it reaches the user's inbox. Its major function is to detect and eliminate the junk emails getting into the user's accounts. To avoid spam emails, our company offered efficient spam filters to manage and provide spam-free inboxes. We offer Incoming and Outgoing spam filters based on your grade of protection.</p>
+              <p className="text-lg text-slate-600 leading-relaxed font-medium text-justify">We offer a Cloud-based Spam filter identifies phishing that damages computer, server, or computer network. Once the spam filter is installed, you will get an administration portal where you can manage main features whitelists and blacklists management, subject or content filters, virus identification, email recovery, and quarantine blocking spam.</p>
           </div>
         </div>
         </section>
@@ -103,7 +103,7 @@ export default function AboutNew() {
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200">
               <div className="mb-6"><i className="fi fi-ts-envelope-download text-5xl text-blue-600"></i></div>
               <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Smart Spam Filtering</h4>
-              <p className="text-slate-600 leading-relaxed mb-6">We build intelligent, real-time spam filters that adapt to evolving threats. SpamCloud.in ensures your inbox stays clean and secure—without the manual effort.</p>
+              <p className="text-slate-600 leading-relaxed mb-6 text-justify">We build intelligent, real-time spam filters that adapt to evolving threats. SpamCloud.in ensures your inbox stays clean and secure—without the manual effort.</p>
               <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
             </div>
@@ -111,7 +111,7 @@ export default function AboutNew() {
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200">
               <div className="mb-6"><i className="fi fi-ts-envelope-dot text-5xl text-blue-600"></i></div>
               <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">99.9% Email Delivery Accuracy</h4>
-              <p className="text-slate-600 leading-relaxed mb-6">Our filtering engine guarantees reliable and accurate email delivery, ensuring legit emails never get lost. Experience world-class spam protection.</p>
+              <p className="text-slate-600 leading-relaxed mb-6 text-justify">Our filtering engine guarantees reliable and accurate email delivery, ensuring legit emails never get lost. Experience world-class spam protection.</p>
               <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
                 Know More <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
@@ -120,7 +120,7 @@ export default function AboutNew() {
             <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-200">
               <div className="mb-6"><i className="fi fi-bs-mailbox-envelope text-5xl text-blue-600"></i></div>
               <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">24/7 Support & Security</h4>
-              <p className="text-slate-600 leading-relaxed mb-6">Your security is our priority. Our expert team is available round-the-clock to assist, monitor, and keep your email infrastructure running smoothly.</p>
+              <p className="text-slate-600 leading-relaxed mb-6 text-justify">Your security is our priority. Our expert team is available round-the-clock to assist, monitor, and keep your email infrastructure running smoothly.</p>
               <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
             </div>
@@ -142,7 +142,7 @@ export default function AboutNew() {
             <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 group">
                 <i className="fi fi-ts-envelope-download text-5xl text-blue-600 mb-6 block group-hover:text-blue-700 transition-colors duration-300"></i>
               <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Incoming Email Filtering</h4>
-              <p className="text-slate-600 leading-relaxed mb-6">Email continuity & protection from spam, virus, ransomware, phishing, malware.</p>
+              <p className="text-slate-600 leading-relaxed mb-6 text-justify">Email continuity & protection from spam, virus, ransomware, phishing, malware.</p>
               <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
             </div>
@@ -150,7 +150,7 @@ export default function AboutNew() {
             <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 group">
                 <i className="fi fi-ts-envelope-dot text-5xl text-blue-600 mb-6 block group-hover:text-blue-700 transition-colors duration-300"></i>
               <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Outgoing Email Filtering</h4>
-              <p className="text-slate-600 leading-relaxed mb-6">Abuse management to help avoid IP blacklisting and improve email delivery and continuity.</p>
+              <p className="text-slate-600 leading-relaxed mb-6 text-justify">Abuse management to help avoid IP blacklisting and improve email delivery and continuity.</p>
               <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
                 Know More <i className="fa-solid fa-arrow-right-long"></i>
               </Link>
@@ -159,7 +159,7 @@ export default function AboutNew() {
             <div className="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-slate-200 group">
                 <i className="fi fi-bs-mailbox-envelope text-5xl text-blue-600 mb-6 block group-hover:text-blue-700 transition-colors duration-300"></i>
               <h4 className="text-xl font-semibold text-slate-900 mb-4 tracking-tight">Email Archiving</h4>
-              <p className="text-slate-600 leading-relaxed mb-6">Robust encrypted email archiving to help prevent data loss and improve legal compliance.</p>
+              <p className="text-slate-600 leading-relaxed mb-6 text-justify">Robust encrypted email archiving to help prevent data loss and improve legal compliance.</p>
               <Link href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 hover:shadow-lg">
               Know More <i className="fa-solid fa-arrow-right-long"></i></Link>
             </div>

@@ -69,7 +69,7 @@ export default function CardHoverEffectDemo() {
   return (
     <div className="relative">
       {/* Left Sidebar Navigation - Clean style */}
-      <div className={`hidden lg:block w-48 fixed left-8 z-10 transition-all duration-500 ${
+      {/* <div className={`hidden lg:block w-48 fixed left-8 z-10 transition-all duration-500 ${
         showSidebar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
       }`} style={{ top: 'calc(35vh)' }}>
         <div className="space-y-2">
@@ -120,7 +120,7 @@ export default function CardHoverEffectDemo() {
           
    
         </div>
-      </div>
+      </div> */}
 
       {/* Proofpoint-style collapsible sections */}
       <div className="max-w-5xl mx-auto px-6 lg:px-8 space-y-6">
